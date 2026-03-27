@@ -1,0 +1,515 @@
+ body {
+      margin: 0;
+      padding: 0;
+	  font-family: 'Inter Custom', '', serif;
+    }
+    .container-register {
+      max-width: 1440px;
+      background: #fff;
+      margin: 30px auto;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+	  border:1px solid #d1d1d1;
+    }
+    .left {
+      flex: 1 1 270px;
+      min-width: 270px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 35px 20px;
+    }
+    .left img {
+      max-width: 98%;
+    }
+    .right {
+      flex: 2 1 400px;
+      min-width: 340px;
+      padding: 40px 32px;
+      background: #fff;
+    }
+	
+	/****************/
+	
+	/* --- Course registration content styles --- */
+.course-head { width:100%; box-sizing:border-box; }
+
+.course-title {
+  font-size:34px;
+  color:#0C1896;          /* deep blue heading like screenshot */
+  margin:2px 0 8px;
+  font-weight:700;
+  letter-spacing:0.2px;
+}
+
+.course-sub {
+  font-size:16px;
+  color:#1E1E1E;
+  font-weight:700;
+  margin-bottom:14px;
+}
+
+/* light-blue info strip */
+.info-strip {
+  background:#e6f6ff;     /* pale blue */
+  padding:12px 14px;
+  color:#0C1896;
+  font-size:13px;
+  margin-bottom:18px;
+  border-radius:2px;
+}
+
+/* panel with blue top border and thin border */
+.price-panel {
+  border:1px solid #cfeaf9;
+  background:#fbfeff;
+  margin-top:8px;
+  overflow:hidden;
+}
+
+/* thin bright blue top indicator like screenshot */
+.price-panel::before{
+  content:"";
+  display:block;
+  height:4px;
+  background:#17a0f0;
+  width:100%;
+}
+
+/* inner padding */
+.panel-inner {
+  padding:18px 20px;
+}
+
+/* Section heading inside panel */
+.panel-title {
+  margin:0 0 10px;
+  font-size:16px;
+  color:#16202a;
+  font-weight:700;
+}
+
+/* Course name + price line */
+.course-line {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.course-name {
+  color:#0b3a59;
+  font-weight:600;
+  font-size:14px;
+}
+
+.course-price {
+  color:#111;
+  font-weight:700;
+  font-size:16px;
+  white-space:nowrap;
+}
+
+/* pink note bullet + text */
+.panel-note {
+  margin:10px 0 0;
+  font-size:13px;
+  color:#d12c9b;          /* pink note color */
+  line-height:1.4;
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+}
+
+.note-bullet {
+  display:inline-block;
+  margin-top:-1px;
+  color:#ff38b0;
+  font-weight:700;
+  font-size:18px;
+  line-height:1;
+}
+
+/***************/
+.form-sec {
+	width:100%;
+	margin: 40px 0 0;
+}
+.names-field {
+	width:210px;
+	height:44px;
+	border:1px solid #c5d8f1;
+	 padding: 10px 12px;
+}
+.margin-down {
+	margin: 0 0 10px;
+    float: left;
+    font-size: 14px;
+    color: #131927;
+    font-weight: 700;
+}
+
+/* Coupon inline with fields */
+.row.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* first name | last name | coupon */
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+/* Coupon box style */
+.coupon-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.coupon-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.coupon-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.tag {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.coupon-row {
+  display: flex;
+  gap: 8px;
+}
+
+.coupon-row input {
+  flex: 1;
+  padding:8px 12px;
+  border: 1px solid #c5d8f1;
+  font-size: 14px;
+  width:160px;
+  height: 44px;
+}
+
+.apply-btn {
+  background: #00ADEE;
+  border: 1px solid #00ADEE;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #00ADEE;
+}
+
+.coupon-note {
+  font-size: 12px;
+  color: #00ADEE;
+  margin-top: 6px;
+}
+.error {
+color: #E31E24;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+margin:5px 0 0;
+}
+
+/*****************/
+.form-left {
+	float:left;
+	width:60%;
+	padding:10px 0;
+	  box-sizing: border-box;
+}
+
+/* Labels */
+.field-label {
+  display: block;
+  font-weight: 700;
+
+  margin: 12px 0 6px;
+  font-size: 14px;
+}
+
+/* Inputs & selects - consistent look */
+.form-left input[type="email"],
+.form-left input[type="tel"],
+.form-left select {
+  height: 44px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border: 1px solid #d2d2d2;
+  border-radius: 2px;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+}
+
+
+/* Phone row: two blocks side-by-side using floats (no flex) */
+.phone-row {
+  margin-top: 6px;
+  overflow: hidden; /* clear floats */
+}
+
+.country-select {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4%;
+  /* keep same visual height */
+  height: 44px;
+  box-sizing: border-box;
+  width:39%;
+}
+
+.phone-row input[type="tel"] {
+  display: inline-block;
+  width: 56%;
+  box-sizing: border-box;
+}
+
+/* Two column select row (Select Country / Select State) using floats */
+.two-col {
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.col {
+  float: left;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.col + .col {
+  float: right;
+  width: 48%;
+}
+
+/* small caret on right side of select - we keep native but add padding */
+.form-left select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #000 50%),
+                    linear-gradient(135deg, #000 50%, transparent 50%);
+  background-position: calc(100% - 16px) calc(1em + 2px), calc(100% - 11px) calc(1em + 2px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 38px;
+}
+
+/* Buttons area */
+.buttons {
+  margin-top: 28px;
+  overflow: hidden;
+  clear: both;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 44px;
+  font-size: 18px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  transition: opacity .15s ease;
+  margin-right: 18px;
+}
+
+/* outline reset button like screenshot */
+.btn-outline {
+  background: transparent;
+  color: #192b8f;
+  border: 2px solid #192b8f;
+  padding: 12px 44px;
+  font-weight: 600;
+}
+
+/* solid blue submit */
+.btn-primary {
+  background: #071a84; /* deep blue */
+  color: #fff;
+  padding: 14px 64px;
+  font-weight: 600;
+}
+
+/* Hover states */
+.btn:hover { opacity: 0.9; }
+
+
+/******************************/
+
+
+select, input { max-width: 100%; }
+.row.two .field, .row.two .coupon-box { min-height: 0; }
+
+
+.form-right {
+    float: left;
+    width: 40%;
+    line-height: 2.2;
+}
+
+
+.form-right .fees-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.form-right .fees-box {
+  border: 1px solid #ccc;
+  padding: 12px 14px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.form-right .row {
+  overflow: hidden;
+  margin: 6px 0;
+}
+
+.form-right .row .label {
+  float: left;
+  font-size: 14px;
+  color: #222;
+}
+
+.form-right .row .value {
+  float: right;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+
+.form-right hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.form-right .payable .label,
+.form-right .payable .value {
+  font-weight: 700;
+  font-size: 15px;
+}
+.email {
+	width:97%!important;
+}
+.phone-det {
+    width: 53% !important;
+}
+.country-state {
+	width: 94% !important;
+}
+
+/* ======= RESPONSIVE BREAKPOINTS ======= */
+@media (max-width: 1280px) {
+	.names-field {
+    width: 157px;
+	}
+	
+}
+@media (max-width: 1000px) {
+.margin-down {
+    width: 100%;
+}
+    .names-field {
+        width: 88%;
+    }
+}
+
+@media (max-width: 1024px) {
+  .row.two {
+    grid-template-columns: 1fr 1fr; /* first | last */
+    grid-auto-rows: auto;
+  }
+
+  .row.two .coupon-box {
+    grid-column: 1 / -1;
+    margin-top: 6px;
+  }
+
+  .coupon-row input {  }
+  .apply-btn { height: 44px; padding: 10px 14px; }
+}
+
+@media (max-width: 768px) {
+.margin-down {
+    width: 100%;
+}	
+.names-field {
+    width: 90%;
+}
+.coupon-row input {
+     }
+	
+.form-sec {
+	width:100%;
+}
+	
+.form-left {
+	width:100%;
+	padding:0;
+}
+		
+.form-right {
+	width:100%;
+	padding:0;
+}
+	
+}
+/* Mobile: single column stack */
+@media (max-width: 600px) {
+  .row.two {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .row.two .coupon-box { grid-column: auto; }
+
+  .names-field { width: 100%; height: 44px; }
+
+  .coupon-row {
+    flex-direction: row; 
+  }
+}
+
+
+/* Responsive: stack on narrow screens */
+@media (max-width: 520px) {
+  .country-select,
+  .phone-row input[type="tel"],
+  .col,
+  .col + .col {
+    width: 100%;
+    display: block;
+    float: none;
+    margin-right: 0;
+  }
+  .buttons { text-align: left; }
+  .phone-det {
+    width:100% !important;
+	margin-top:20px;
+}
+.btn-outline {
+    width: 100%;
+    margin: 0 0 10px;
+}
+.btn-primary {
+    width: 100%;
+	margin:0 0 30px;
+}
+}

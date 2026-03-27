@@ -1,0 +1,1129 @@
+.secondSection-page .right_triangle img {
+    height: unset;
+}
+
+.custom-grid {
+    display: block;
+}
+.expt-righttt {
+    margin-right: 35px;
+}
+
+.expertish_text.w-full {
+       margin-left: -29.2vw;
+}
+
+.expertish_textt {
+padding-left: 34.333333%;
+margin-left : 0;
+}
+@media (min-width: 768px) {
+    .custom-grid {
+        display: grid;
+        grid-template-columns: 7fr 5fr; /* 8/12 and 4/12 split */
+        gap: 1.5rem; /* same as Tailwind gap-6 */
+    }
+}
+
+.aboutSection-custom {
+    position: relative;
+}
+
+.aboutsectionHeading {
+    margin-bottom: 51px;
+}
+
+.aboutSection-custom .header_text{
+    margin-left: 0;
+}
+
+.aboutSection-custom .header_text h2,
+.aboutSection-custom .header_text h2 span {
+    font-size: 45px;
+}
+
+.aboutSection-custom .exprience_icon.text-end {
+    margin-left: 0;
+}
+
+.triangleImage {
+    position: absolute;
+    width: 54.6%;
+    right: 0;
+    top: -194px;
+    height: auto;
+}
+
+.triangleImage img {
+    width: 100%;
+}
+
+.sectionContent p {
+    font-size: 18px;
+    color: #636363;
+    margin: 0 0 15px 0;
+}
+.opportunity .header_text h2,
+.opportunity .header_text h2 span{
+    font-size: 36px !important;
+}
+.inovation .header_text h2,
+.inovation .header_text h2 span{
+    font-size: 48px !important;
+}
+.expertise_block .expertise_bottom_angle {
+    position: absolute;
+    bottom: -92px;
+    transform: rotate(0deg);
+    left: 23%;
+    z-index: -1;
+}
+.expertise_block::after{
+    display: none;
+}
+.signature-event .header_text h2 span{
+    font-size: 40px;
+}
+.explore_opportunities .impect_text{
+    font-size: 1.7vw;
+}
+.create-impact{
+    padding: 80px 0 30px !important;
+}
+.create-impact .header_text h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.create-impact .header_text h4{
+    font-size: 32px;
+}
+.conference-video .container {
+    padding-inline: 0;
+}
+.conference-video .video-wrapper {
+    width: 100%;          /* Full width */
+    height: 620px;        /* Custom height (adjust as needed) */
+    object-fit: cover;
+}
+
+.conference-video{
+    display: block;
+}
+.conference-video-mobile{
+    display: none;
+}
+.visionaries .blue_trangle_text h4{
+    font-size: 64px;
+    font-weight: 700;
+}
+.visionaries .blue_trangle_text {
+    width: 32vw;
+    height: 36vw;
+    bottom: -14vw;
+}
+.award_block .awards-content{
+    margin-top: 100px;
+}
+.award_block .award_image{
+    width: 530px;
+}
+.sponsor .header_text h2,
+.sponsor .header_text h2 span{
+    font-size: 40px;
+}
+.sponsor .header_text h2{
+    font-weight: 700;
+}
+.sponsor .header_text{
+    margin-left: 0;
+}
+.sponsor .marquee-container{
+    margin-top: 0;
+}
+.sponsor.p-0.overflow-hidden.sponser-padding.home-sponser {
+    padding-top: 0 !important;
+}
+.map-header .header_text h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.right_man_angel{
+    clip-path:polygon(115% -15%, 0% 50%, 100% 94%) !important;
+    overflow: hidden;
+}
+
+.slider-twoimage {
+    top: 46% !important;
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+    object-position: bottom;
+}
+.slider-conf {
+    margin-bottom: -17vw !important;
+}
+.right_blue_arrow {
+    bottom: 0;
+}
+
+.transformInovation-Section .inovation-hover-two {
+       background: linear-gradient(270deg, #0340CE 0%, #01B3F8 100%);
+}
+.whereLeader .header_text h2 span {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+/* ======================================== Start Aakash ========================= */
+
+.hideOnMobile{
+    display: block;
+}
+.showOnMobile{
+    display: none;
+}
+
+section.sponsor_benefit .header_text h2 span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.sectionTitle-blueocean h2{
+    font-size: 40px;
+    color: #0C1896;
+    font-weight: 600;
+}
+.sectionTitle-blueocean span{
+    font-weight: 600;
+}
+
+ .tns-nav {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .tns-nav button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+  }
+
+  .tns-nav button::before {
+    content: "";
+  }
+
+  .tns-nav button.tns-nav-active::before {
+    content: "";
+    color: #000;
+  }
+
+  .partenerWithUs-desktop{
+    display: block;
+  }
+
+.partenerWithUs-mobile{
+    display: none;
+  }
+
+.sectionTitle-blueocean.two h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #00A0E3;
+}
+.videoTrangle-Desktop{
+    display: block;
+}
+.videoTrangle-mobile{
+    display: none;
+}
+.awardSection{
+    position: relative;
+}
+.transformInovation-Section .inv_hov-text .header_text h2 span {
+    font-size: 26px !important;
+}
+.transformInovation-Section .inv_hov-text .header_text h2 {
+    font-size: 24px !important;
+}
+
+.shapeCorner{
+    display: none;
+}
+.header_text.impact-left {
+    margin-left: -1vw !important;
+}
+/* ======================================== End Aakash ========================= */
+
+
+/* ======================================== Start Vikas ========================= */
+.expertise-custom::after {
+    display: none;
+}
+    .aboutSection-custom .conference-image{
+        display: none;
+    }
+    .upcoming-event-ad-sm{
+        display: none;
+    }
+    .inovation-custom-sm{
+        display: none;
+    }
+
+/* ======================================== End Vikas ========================= */
+
+
+/* ========================================================================================
+
+                             Start Media Queries
+
+=============================================================================================*/
+
+/* ========================== Start Desktop (Large screens - 1440px and below) =============================== */
+
+
+@media screen and (max-width: 1440px) {
+    /* Your styles for screens <= 1440px */
+    .aboutSection-custom .exprience_icon{
+        position: absolute !important;
+        left: 45vw !important;
+        top: 3vh !important;
+    }
+    .aboutSection-custom .header_text h2,
+        .aboutSection-custom .header_text h2 span {
+        font-size: 36px;
+    }
+    .aboutSection-custom .aboutsectionHeading {
+        margin-bottom: 20px;
+    }
+    .aboutSection-custom .sectionContent p{
+        font-size: 15px;
+    }
+    .aboutSection-custom h4.confic-text{
+        font-size: 20px;
+    }
+    .aboutSection-custom .btn .primary-btn{
+        margin-top: 0;
+    }
+    .triangleImage {
+        top: -106px;
+    }
+    .about-content{
+        padding: 0;
+    }
+    .conference-video .video-wrapper {
+        height: 495px;
+    }
+    .visionaries .blue_trangle_text {
+        height: 42vw;
+    }
+    .visionaries .blue_trangle_text h4 {
+        font-size: 48px;
+    }
+    .banner_block .banner_image .banner_content h1.banner_text {
+       font-size: 58px !important;
+    }
+    .expertise_block {
+        background-size: 77vw 100% !important;
+    }
+    .slider-conf {
+        margin-bottom: -18vw !important;
+    }
+    .right_man_angel {
+        bottom: -35% !important;
+    }
+    .benefit_content .impect_text span {
+        font-size: 2.083vw !important;
+    }
+    .slider-twoimage {
+        top: 46% !important;
+        height: 52vh;
+        object-position: center;
+    }
+    .award_block .awards-content {
+        margin-top: 0px;
+    }
+}
+/* ========================== End Desktop =============================== */
+
+@media screen and (max-width: 1360px) {
+    /* Your styles for screens <= 1360px */
+    .aboutSection-custom .btn .primary-btn{
+        margin-top: 0;
+    }
+    .triangleImage {
+        top: -46px;
+    }
+    .expertise_block {
+        background-size: 76.8vw 100% !important;
+    }
+    .signature_right img {
+        width: 80%;
+        display: flex;
+        justify-self: end;
+    }
+    .slider-conf {
+        margin-bottom: -12vw !important;
+    }
+    .conference-video .video-wrapper {
+        height: 468px;
+    }
+    .benefit_content h2{
+        font-size: 30px;
+    }
+    .benefit_content .list-benefit ul li{
+        font-size: 14px;
+    }
+    .benefit_content .impect_text{
+        margin-top: 30px;
+    }
+    .create-impact {
+        padding: 50px 0 30px !important;
+    }
+    .slider-twoimage {
+        top: 43% !important;
+        height: 56vh;
+    }
+    .slider-conf {
+        margin-bottom: -18vw !important;
+    }
+    .visionaries .blue_trangle_text {
+        height: 43vw;
+    }
+}
+
+
+/* ========================== Start Laptop (Medium screens - 1280px and below) =============================== */
+@media screen and (max-width: 1280px) {
+    /* Your styles for screens <= 1280px */
+}
+/* ========================== End Laptop =============================== */
+
+/* ========================== Start Tablet (Small screens - 1024px and below) =============================== */
+@media screen and (max-width: 1024px) {
+    /* Your styles for screens <= 1024px */
+}
+/* ========================== End Tablet =============================== */
+
+/* ========================== Start Tablet Portrait (768px and below) =============================== */
+@media screen and (max-width: 768px) {
+    /* Your styles for screens <= 768px */
+}
+/* ========================== End Tablet Portrait =============================== */
+
+/* ========================== Start Mobile Landscape (600px and below) =============================== */
+@media screen and (max-width: 600px) {
+    /* Your styles for screens <= 600px */
+    /* About Section */
+    .aboutSection-custom .triangleImage {
+        display: none;
+    }
+    .aboutSection-custom .about-content .about-btn{
+        display: none;
+    }
+    .upcoming-event-custom .upcoming-event-ads img.upcoming-event-ad{
+        display: none;
+    }
+    .conference-image{
+        display: block;
+    }
+}
+/* ========================== End Mobile Landscape =============================== */
+
+/* ========================== Start Mobile Portrait (480px and below) =============================== */
+@media screen and (max-width: 480px) {
+.ft-size-32{
+    font-size: 32px !important;
+}
+
+.ft-size-24{
+    font-size: 24px !important;
+}
+
+.mt-c-20{
+    margin-top: 20px !important;
+}
+
+
+    /* Your styles for screens <= 480px */
+    /* .banner_block .banner_image .banner_content h1.banner_text span {
+        font-size: 20px ;
+    }
+    .banner_block .banner_image .banner_content h1.banner_text {
+        font-size: 34px !important;
+    } */
+
+/* ======================================== Start Aakash ========================= */
+.sectionTitleSize  h2{
+    font-size: 32px !important;
+}
+
+  .signature-event .header_text.sectionHeading-custom h2 span, .signature-event .header_text.sectionHeading-custom h2  {
+    font-size: 32px !important;
+}
+
+.signatureMovement-custom .slider-item .triangle-customImage{
+     width: 180px;
+}
+
+.signatureMovement-custom .slider-item img.graphic-angle{
+       display: block;
+}
+
+.signatureMovement-custom .slider-item .silder_img {
+    height: 90vh;
+}
+
+.signatureMovement-custom .slider-item .slider-twoimage {
+    top: 54% !important;
+    height: 126vh;
+}
+
+.signatureMovement-custom .signature-event .signature_angle-content .gradent_content img {
+    max-width: 81px;
+}
+.TriangleBox {
+    position: relative;
+}
+.logoContent {
+    position: absolute;
+    z-index: 9999;
+    top: -162%;
+}
+
+ .signature-event .signatureMovement-custom .signature_angle-content .gradent_content img {
+    max-width: 76px;
+}
+
+#custom-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 10;
+}
+
+#custom-controls button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.signatureevent-slider {
+    position: relative; /* Important */
+}
+
+.signature-event .expertish_text h4{
+    text-align: center;
+}
+
+.signature-event .explore_opportunities .impect_text {
+    font-size: 24px;
+    display: block;
+    margin: 4px 0;
+}
+.explore-custom .explore_box a.btn.btn_theme.btn_text {
+    justify-content: center;
+    font-size: 24px;
+    margin-top: 22px;
+}
+
+section.sponsor_benefit .header_text h2 {
+    font-weight: 400 !important;
+}
+
+section.sponsor_benefit .header_text h2 span {
+    font-weight: 600;
+    font-size: 32px;
+}
+ul#custom-signatureEvent {
+    bottom: 0 !important;
+}
+
+
+/* Style the nav dots container */
+.tns-nav {
+  text-align: center;
+  margin-top: 1rem;
+ 
+  height: 3px;
+}
+
+/* Style each dot */
+.tns-nav button {
+  width: 50%;
+  height: 3px;
+  margin: 0 6px;
+  
+  border-radius: 00%;
+  border: none;
+  transition: background-color 0.3s;
+  /* display: none; */
+}
+
+/* Active dot style */
+
+.tns-nav button.tns-nav-active {
+    background-color: #00A0E3;
+    width: 50%;
+    height: 4px;
+    border-radius: none;
+    border-radius: 0;
+}
+
+
+/* .tns-outer [aria-controls], .tns-outer [data-action] {
+    cursor: pointer;
+    display: none;
+} */
+
+
+.sponsershipSlider-mobile .cert-slide-content::after{
+    display: none;
+}
+
+.sponsershipSlider-mobile .cert-slide-content::before{
+    display: none;
+}
+
+.sponsershipSlider-mobile{
+    display: block;
+}
+   .sponsershipSlider-desktop{
+    display: none;
+   }
+
+
+.sectionTitle-blueocean h2{
+    font-weight: 400;
+    line-height: 35px;
+}
+.sectionTitle-blueocean span{
+    font-weight: 600;
+}
+.upperText {
+    background: #515FED;
+    color: #fff;
+    padding: 20px;
+
+}
+
+
+.upperText h4{
+     font-size: 32px;
+}
+.contentLower {
+    background: #202020;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    min-height: 160px;
+}
+.contentLower p{
+    font-size: 20px;
+}
+
+.partenerWithUs-desktop{
+    display: none;
+  }
+
+
+.partenerWithUs-mobile{
+    display: block;
+  }
+
+.sectionTitle-blueocean.two{
+    font-size: 32px;
+}
+.videoconference-custom .header_text h2, h4.test {
+        font-size: 32px !important;
+    padding-right: 29%;
+}
+.conference-video{
+    display: none;
+}
+.conference-video-mobile{
+    display: block;
+}
+
+/* .videoTraiganle{
+    display: none;
+} */
+section.visionaries {
+    margin-top: 20px !important;
+}
+
+.visionaries  h3.impect_text span{
+    font-size: 32px !important;
+}
+
+.visionaries  h3.impect_text{
+    padding-right: 24%;
+    line-height: 34px;
+}
+.visionaries .mb-xl-5.mb-5.mt-4.gap_mdf{
+    text-align: left;
+}
+.videoTrangle-Desktop{
+    display: none;
+}
+.videoTrangle-mobile{
+    display: block;
+}
+
+
+.awards-Text {
+    position: absolute;
+    left: 4%;
+    top: 18%;
+    color: #fff;
+    /* font-size: 30px; */
+}
+.awardSection h2{
+    position: absolute;
+    font-weight: 700;
+    color: #0C1896;
+    font-size: 46px;
+    right: 7%;
+}
+.awards-Text h4 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+section.award_block {
+    padding: 0 0 0;
+}
+.awardSection p.site-text{
+    font-size: 16px !important;
+}
+
+.awardSection .left_award h3 {
+    font-size: 28px !important;
+}
+.hideOnMobile{
+    display: none;
+}
+.showOnMobile{
+    display: block;
+}
+.videoTrangle-mobile {
+    padding-top: 43px;
+}
+section.award_block.awardSection {
+    padding-top: 0;
+}
+.award_block h4 {
+    font-size: 32px !important;
+    font-weight: 600;
+}
+.reward_box ul li {
+    font-size: 16px !important;
+}
+.gobalFootPrintSection .marquee-item {
+    border: 1px solid #bbbbbb;
+}
+
+.signature_angle-content.gradent-confrence .gradent_content{
+    text-align: left !important;
+}
+
+
+
+.content-slider {
+    background: #F2F2F2;
+    padding: 20px;
+}
+
+.content-slider h3 {
+    color: #0C1895;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.signatureEventSlider .signatureEvent-image {
+       height: 300px;
+    position: relative;
+    margin-top: 115px;
+}
+
+.signatureEventSlider .signatureEvent-image img {
+    height: 100%;
+    object-fit: cover;
+}
+.exporreSection{
+    padding: 26px 0 40px 0;
+}
+
+.exporreSection .explore_box{
+ text-align: left;
+margin-left: 10px;
+}
+
+
+.exporreSection .expertish_text h4 span{
+    display: block;
+    margin: 0 0;
+}
+
+.trigangleImage img {
+    width: 168px;
+    margin-left: 0;
+}
+.trigangleImage {
+      position: absolute;
+    left: 0;
+    top: -37%;
+}
+.icon {
+        position: absolute;
+    z-index: 99999;
+    top: 50%;
+    left: 36%;
+    width: 119px;
+    transform: translate(-50%, -50%);
+}
+.icon img {
+    width: 82px;
+    object-fit: cover !important;
+    height: 100% !important;
+}
+.aboutSection-custom .exprience_icon.text-end{
+    width: 264px !important;
+}
+
+ul#custom-control.sponsershipSlideButton {
+    bottom: -15vw !important;
+}
+
+.video_conferance .header_text h2, .video_conferance .header_text h4{
+    line-height: 38px;
+}
+.create-impact {
+    padding: 20px 0 9px !important;
+}
+section.visionaries {
+    margin-top: 7px !important;
+}
+
+#custom-control-slider1 , #custom-control-slider2, #custom-control-slider3, #custom-control-slider4 {
+     margin-top: 40px;
+}
+
+.gobalFootPrintSection h2 {
+    padding: 20px 0;
+}
+.amliplifySecton .sectionTitle-blueocean h2 {
+    margin-bottom: 16px
+}
+
+.videoconference-custom {
+    position: relative;
+}
+
+.shapeCorner {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 15%;
+}
+/* ======================================== End Aakash ========================= */
+
+/* ======================================== Start Vikas ========================= */
+
+
+    /* Banner Section ===============*/
+    .banner-custom .banner_image .banner_content h1.banner_text span{
+        font-size: 20px !important;
+    }
+    .banner-custom .banner_image .banner_content h1.banner_text{
+        font-size: 34px !important;
+        width: 70%;
+    }
+
+
+    /* About Section ================= */
+    .aboutSection-custom .conference-image{
+        visibility:visible;
+    }
+    .aboutSection-custom .conference-image{
+        display: block;
+    }
+    .aboutSection-custom{
+        padding-block: 0;
+    }
+    .aboutSection-custom .header_text h2,
+    .aboutSection-custom .header_text h2 span{
+        font-size: 32px;
+    }
+    .aboutSection-custom .header_text h2{
+        font-weight: 700;
+    }
+    .aboutSection-custom .exprience_icon {
+        position: static !important;
+    }
+    .aboutSection-custom .exprience_icon{
+        margin-left: auto !important;
+    }
+    .aboutSection-custom .exprience_icon {
+        width: 260px !important;
+    }
+    .aboutSection-custom .sectionContent p {
+        font-size: 16px;
+    }
+    .aboutSection-custom h4.confic-text {
+        font-size: 26px;
+        font-weight: 400;
+    }
+    .aboutSection-custom h4.confic-text span {
+        font-weight: 700;
+    }
+    .aboutSection-custom .rightaboutus {
+        padding: 0;
+    }
+    .aboutSection-custom .about-content {
+        padding: 0;
+    }
+
+
+    /* Upcomming Event Section =============== */
+    .upcoming-event-custom .upcoming-event-ad-sm{
+        display: block;
+    }
+    .upcoming-event-custom .opportunity {
+        padding: 18px;
+    }
+    .upcoming-event-custom .opportunity .header_text h2,
+    .upcoming-event-custom .opportunity .header_text h2 span {
+        font-size: 32px !important;
+    }
+    .upcoming-event-custom .opportunity .para_three.last {
+        margin-bottom: 0;
+    }
+    .upcoming-event-custom .new-eventoverlap.absolute {
+        position: static;
+    }
+    .upcoming-event-custom .event-link-btn {
+        position: absolute;
+        bottom: 15px;
+        left: 35px;
+    }
+    .upcoming-event-custom .event-timer {
+        margin: 0 15px 0 0;
+        position: absolute;
+        top: 10px;
+        right: 23px;
+    }
+
+
+    /* Expertise Section ================ */
+    .expertise-custom{
+        margin-bottom: 70px;
+        margin: auto;
+        max-width: 440px;
+    }
+    .expertise-custom .expertise_top_angle img{
+        width: 90%;
+    }
+    .expertise-custom .expertise_top_angle {
+        position: absolute;
+        top: 15px;
+        left: -25px;
+    }
+    .expertise-custom .expertise_bottom_angle {
+        bottom: -44px;
+        left: 0;
+        width: 16vw;
+    }
+    .expertise-custom .expertish_text h2{
+        max-width: 86%;
+        margin-left: auto;
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .expertise-custom .expertish_text h4{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 30px;
+    }
+    .expertise-custom .expertish_text p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    /* Innovation Section ================ */
+    .inovation-custom .header_text h2{
+        line-height: 30px;
+    }
+    .inovation-custom .header_text p{
+        line-height: 24px;
+    }
+    .inovation-custom .header_text h2,
+    .inovation-custom .header_text h2 span {
+        font-size: 32px !important;
+    }
+    .inovation-custom{
+        margin-top: 60px;
+    }
+    .inovation-custom-lg{
+        display: none;
+    }
+    .inovation-custom-sm{
+        display: block;
+    }
+    .inovation-custom-sm .inovation_logo {
+        height: 280px;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 15px 0;
+    }
+    .inovation-custom-sm .main-logo {
+        max-height: 100%;
+        max-width: 80%;
+        object-fit: contain;
+    }
+    .inovation-custom-sm .inovation-hover {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        padding: 15px;
+        background: linear-gradient(180deg, #9a1d86 0%, #ec4899 100%);
+    }
+    .inovation-custom-sm .inovation_logo:hover .inovation-hover {
+        opacity: 1;
+        visibility: visible;
+    }
+    .inovation-custom-sm .text-only-hover .inv_hov-text {
+        width: 100%;
+        text-align: center;
+    }
+    .inovation-custom-sm .inv_hov-text h2 {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #fff;
+    }
+    .inovation-custom-sm .inv_hov-text a {
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    .inovation-custom-sm .inv_hov-text a img {
+        margin-left: 6px;
+        width: 16px;
+        height: 16px;
+    }
+    .inovation-custom-sm .img-box {
+        background: white;
+        min-height: 250px;
+    }
+    .inovation-custom-sm .static-card{
+        background: linear-gradient(61deg, rgba(235, 0, 139, 1) 0%, rgba(71, 3, 135, 1) 65%);
+    }
+    .inovation-custom-sm .static-card h2{
+        text-align: start;
+        font-size: 24px;
+        line-height: 100%;
+    }
+    .inovation-custom-sm .static-card .content-div{
+        text-align: start;
+        padding: 20px;
+    }
+    .inovation-custom-sm .static-card .content-div a{
+        font-size: 24px;
+    }
+
+
+    /* World Map Section ====================*/
+    .world-map-custom .map-header{
+        text-align: left;
+    }
+    .world-map-custom .map-header h2{
+        font-weight: 400;
+        font-size: 32px;
+        text-align: left;
+    }
+    .world-map-custom .map-header h2 span{
+        font-weight: 700;
+        font-size: 32px;
+    }
+    .world-map-custom .map-header h2 span{
+        display: block;
+    }
+    .world-map-custom .map-slider-controls li{
+        background: #0C1896;
+        cursor: pointer;
+        padding: 10px;
+        height: 36px;
+    }
+    .world-map-custom .differ-slide-custom li button{
+        font-size: 24px;
+    }
+    .world-map-custom .differ-slide-custom li button.active {
+        color: #0C1896;
+        font-weight: 700;
+    }
+
+
+
+
+    /* Footer ===========================*/
+    #footer .footer-list-item h2 {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 0 18px 0 !important;
+    }
+    #footer .footer-list-item .footer-menu-list li a{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #footer .footer-list-item .footer-menu-list li:last-child{
+        padding-bottom: 10px;
+    }
+    #footer .container>div{
+        gap: 0;
+    }
+    #footer .footer-leftangle img {
+        width: 50px;
+        top: 23%;
+        left: 7px;
+    }
+
+/* ======================================== End Vikas ========================= */
+
+
+
+}
+/* ========================== End Mobile Portrait =============================== */
+
+/* ========================== Start Small Mobile (360px and below) =============================== */
+@media screen and (max-width: 360px) {
+    /* Your styles for screens <= 360px */
+}
+/* ========================== End Small Mobile =============================== */
+
+/* ========================================================================================
+
+                             End Media Queries
+
+=============================================================================================*/

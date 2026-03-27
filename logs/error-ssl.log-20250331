@@ -1,0 +1,14 @@
+[Sun Mar 30 22:55:47.430461 2025] [fastcgi:error] [pid 221690:tid 140523159287360] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:55:48.925547 2025] [fastcgi:error] [pid 221690:tid 140523033568832] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:55:49.112444 2025] [fastcgi:error] [pid 221690:tid 140523016783424] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:55:49.299585 2025] [fastcgi:error] [pid 221690:tid 140523008390720] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:55:52.337941 2025] [fastcgi:error] [pid 221690:tid 140523159287360] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:55:52.524269 2025] [fastcgi:error] [pid 221690:tid 140523067139648] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:55:53.084328 2025] [fastcgi:error] [pid 221690:tid 140523201250880] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:55:53.270588 2025] [authz_core:error] [pid 221690:tid 140523058746944] [client 154.83.103.15:49370] AH01630: client denied by server configuration: /home/bocdemodb/bocdemosite/public_html/public/server-status
+[Sun Mar 30 22:55:53.457505 2025] [fastcgi:error] [pid 221690:tid 140523050354240] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:55:53.644457 2025] [fastcgi:error] [pid 221690:tid 140523041961536] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:55:58.931879 2025] [authz_core:error] [pid 221690:tid 140523008390720] [client 154.83.103.15:49370] AH01630: client denied by server configuration: /home/bocdemodb/bocdemosite/public_html/public/.htaccess
+[Sun Mar 30 22:56:00.786293 2025] [fastcgi:error] [pid 221690:tid 140522941249088] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:56:00.973070 2025] [fastcgi:error] [pid 221690:tid 140522932856384] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown
+[Sun Mar 30 22:56:01.346681 2025] [fastcgi:error] [pid 221690:tid 140523192858176] [client 154.83.103.15:49370] FastCGI: server "/usr/lib/cgi-bin/php-bocdemosite" stderr: Primary script unknown

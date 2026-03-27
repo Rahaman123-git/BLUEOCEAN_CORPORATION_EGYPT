@@ -1,0 +1,33 @@
+/* Header  v18.03.25:01*/
+
+/* skip to main content css starts here */
+.skip-main {
+    @apply -left-full absolute top-auto w-10 h-10 overflow-hidden -z-50 font-normal text-primary p-1
+    focus:bg-white focus:left-8 focus:w-1/5 focus:h-auto focus:overflow-auto focus:z-50 focus:text-center focus:underline;
+}
+/* skip to main content css ends here */ 
+
+header {
+    @apply border-b border-primary;
+}
+.header-main {
+    @apply bg-white py-6 lg:py-0 px-3 lg:px-[30px] relative;
+    .language-drop {
+        @apply z-10 w-48 py-2 px-4 text-base list-none bg-white rounded;
+        li {
+            @apply py-2;
+        }
+    }
+    .header-search {
+        @apply px-4 border-x border-[#B2B2B2] hidden lg:block -mt-[10px];
+    }
+    .menu-item {
+        @apply block py-1 lg:py-7 px-3 text-base text-[#767676] font-normal;
+    }
+    .menu-item.active {
+        @apply text-primary border-b-8 border-primary;
+    }
+    .top-drawer-search {
+        @apply fixed left-0 right-0 z-40 w-full px-4 py-20 bg-[#ffffffc9];
+    }
+}

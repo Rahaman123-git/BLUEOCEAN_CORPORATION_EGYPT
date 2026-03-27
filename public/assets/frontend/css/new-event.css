@@ -1,0 +1,714 @@
+h2, h3, h4, h5, h6 {
+    line-height: 1;
+}
+p {
+    font-size: 1.1vw;
+    line-height: 1.2;
+}
+.slider-inner {
+    position: relative;
+} 
+.slider-inner figure {
+    padding: 0;
+    margin: 0;
+}
+.slider-inner figure img {
+    display: block;
+}
+.slider-banner-abs {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.slider-banner-abs h1 {
+    font-size: 4.4vw;
+    line-height: 1;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+.slider-banner-abs h1 small {
+    display: block;
+    font-weight: 400;
+    font-size: 100%;
+}
+.banner-logo {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 48px;
+}
+.banner-logo li {
+border-right: 1px solid #fff;
+padding-right: 20px;
+}
+.banner-logo li:last-child {
+    border: 0;
+} 
+/* ************************ */
+.tns-outer {
+    padding: 0 !important;
+    position: relative;
+}
+.tns-nav {
+    text-align: center;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+}
+.tns-nav button {
+    width: 10px;
+    height: 10px;
+    background-color:rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    left: 0;
+    margin: 0 8px;
+}
+.tns-nav button.tns-nav-active {
+    background-color:rgba(255, 255, 255, 1);
+}
+/* ************************ */
+.sec-event-first {   
+    background-position:left 100%;
+    background-repeat: no-repeat;
+    padding: 1.5vw 0 4.5vw;
+    background-size: 8%;
+}
+.inner-sec-ipsc {
+    display: flex;
+    gap: 2.5vw;
+    align-items: center;
+}
+.inner-sec-ipsc p {
+    font-size: 1.25vw;
+    line-height: 1.2;
+}
+.global-supply {
+    margin:4vw 0 0;
+    position: relative;   
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+.global-supply-inner {
+    display: flex;
+    gap: 40px;
+}
+.global-supply h2 {
+    font-size: 3vw;
+    color: #0C1895;
+    margin-bottom: 16px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.venue {
+    display: flex;
+    margin: 3vw 0 0;
+    padding-bottom: 2vw;
+}
+.venue .date-venue {
+    border-right: 1px solid #979797;
+    font-size: 1.5vw;
+    color:#000;
+    line-height: 1;
+    padding: 0 24px;
+    text-align: center;
+    margin-right: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.venue .date-venue strong {
+    display: block;
+    font-size: 4vw;
+    color:#0C1895;
+    font-weight: 700;
+}
+.sec-right-global {
+
+}
+.sec-right-global h3 {
+    color:#0C1896;
+    font-size: 2.25vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.sec-right-global p {
+    color:#818181;
+    font-size: 1.5vw;
+}
+.sept-rect {
+    display: flex;
+}
+.sec-network {  
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 22% 100%;
+    margin: 3vw 0;
+    padding: 3vw 5vw 3vw 0;
+}
+.network-hdn {
+position: relative;
+margin: 3vw 0;
+}
+.network-hdn-inner {
+    background: linear-gradient(90deg, #390169 -9.71%, #D56000 100%);
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    height: 10vw;
+    width: 50vw;   
+}
+.network-hdn h3 {
+    font-size: 2.4vw;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+}
+.network-hdn h3 small {
+    display: block;
+    font-size: 100%;    
+}
+.network-hdn-abs {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:2.75vw;
+    bottom: 0;
+}
+.sectors-sec {
+margin-top: -15vw;
+}
+.sectors-inner {
+    border:1px solid #D05D03;
+    display: flex;
+    gap: 6vw;
+    padding: 2vw;
+    background-color: #fff;
+}
+.list-sector {
+padding-top: 6vw;
+flex: 70%;
+}
+.list-sector li {
+    background-color: #2A3E86;
+    display: inline-block;
+    margin: 4px 0 4px;
+    color:#fff;
+    padding: 8px 12px;
+    font-size: 1vw;
+}
+.list-network {
+    flex-basis: 30%;
+}
+.list-network li {
+border-bottom: 1px solid #AAAAAA;
+text-transform: uppercase;
+padding: 8px 0;
+line-height: 1;
+}
+.list-network li h4 {
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #0C1895;
+}
+.list-network li dfn {
+    font-size: 1.5vw;
+    color: #0C1895;
+    font-style: normal;
+    font-weight: 500;
+}
+.list-network li:last-child {
+    border: 0;
+}
+.why-sponsor {    
+    background-position:left top;
+    background-repeat: no-repeat;
+    padding: 1.5vw 0 4.5vw;
+    background-size: 8%;
+}
+.why-sponsor h3 {
+    font-size: 3.5vw;
+    color: #00A0E3;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 2vw;
+}
+.why-sponsor h3 small {
+    font-size:2vw;
+    display: block;
+    color:#0C1895;
+    font-weight: 700;
+}
+.why-sponsor h4 {
+    font-size:1.8vw;
+    display: block;
+    color:#0C1895;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.list-sponsor {   
+    background-position: center center;
+    background-size: 136%;
+    overflow: hidden;
+    margin-right: -20px;
+}
+.list-sponsor li {
+    border-right: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    min-height: 200px;
+    width:25%;
+    float: left;
+    padding: 20px;
+    color: #fff;
+    font-size: 1.45vw;
+    line-height: 1.1;
+    font-weight: 700;
+}
+.list-sponsor li.padd-top {
+    padding-top: 90px;
+}
+.list-sponsor li:last-child {
+    width: 75%;
+    color: #0FBAFF;
+}
+
+.award-sec {    
+    background-position:left top;
+    background-repeat: no-repeat;
+    padding: 1.5vw 0 0;
+    background-size: 8%;
+    margin: 2.5vw 0;
+}
+.award-sec h4 {
+    font-size: 3.5vw;
+    line-height: 1;
+    color: #0C1896;
+    font-weight: 700;
+    margin-bottom: .75vw;
+}
+.sub-head-award {
+    display: flex;
+    color: #0C1896;
+    font-size: 1.75vw;
+    margin-bottom: 6vw;
+}
+.sub-head-award span {
+    flex-grow: 1;
+    font-weight: 500;
+}
+.award-sec h5 {
+    font-size: 1.66vw;
+    line-height: 1;
+    color: #0C1896;
+    font-weight: 700;
+    margin-bottom: .75vw;
+}
+.award-winning {
+background-color:#CFF0FF;
+position: relative;
+display: flex;
+padding: 2vw;
+margin-bottom:9vw;
+}
+.award-winning ul {
+    flex-basis: 33%;
+}
+.award-winning ul li {
+    color: #000000;
+    position: relative;
+    padding-left: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.award-winning ul li:before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000;
+    content: "";
+    top: 8px;
+    left: 0;
+}
+.award-winning figure {
+    position: absolute;
+    left: 27%;
+    top: -254px;
+}
+.claim-ticket {   
+    background-repeat: no-repeat;
+    padding:10vw 0 0;
+    background-size: 100% auto;
+    margin-bottom: 5vw;
+}
+.claim-ticket h3 {
+    font-size: 2.25vh;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom:2vw;
+}
+.claim-ticket h3 small {
+    font-size: 100%;
+    display: block;
+    font-weight: 300;
+}
+.ticket-abs {
+    position: absolute;
+    right: 10%;   
+    background-repeat: no-repeat;
+    right: 10%;
+    bottom: -64px;
+    min-height: 289px;
+    min-width: 589px;
+    display: flex;
+    gap: 30px;
+    line-height: 1;
+}
+.ticket-abs-left {
+    flex-basis: 50%;
+    padding:16px 32px;
+}
+.ticket-abs-left span {
+    font-size: 19px;
+    display: block;
+    margin-bottom: 12px;
+    color: #000;
+    font-weight: 500;
+}
+.ticket-abs-left strong {
+    font-size: 45px;
+    display: block;
+    color: #0C1896;
+}
+.ticket-abs-right {
+    flex-basis: 50%;
+    align-items: center;
+    display:inline-flex;
+    padding: 24px;
+}
+.ticket-abs-right strong {
+    font-size: 45px;    
+    color: #fff;
+}
+.logo-spons {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    margin-left: -65px;
+}
+.logo-spons img {
+    width: 160px;
+}
+.title-sponsors {
+    padding: 3vw 0;
+}
+.title-sponsors h3 {
+    font-size: 1.75vw;
+    font-weight: 700;
+    color: #0C1895;
+    margin-bottom:1.5vw;
+    line-height: 1;
+}
+.list-title-spons {
+    display: flex;
+    gap: 20px;
+}
+.list-title-spons li {
+    margin-bottom: 20px;
+    border: 1px solid #D6D6D6;
+    flex-basis: 25%;
+}
+@media (max-width: 1400px) {
+    .award-winning figure {
+        width: 37%;
+        top: -112px;
+    }
+    .ticket-abs {
+        right: 5%;
+        bottom: -44px;
+    }
+    .why-sponsor, .sec-event-first, .award-sec {
+        background-size: 5%;
+    }
+    .claim-ticket h3 {
+        font-size: 24px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .claim-ticket {
+        padding: 8vw 0 0;
+        margin-bottom: 5vw;
+    }
+    .ticket-abs {
+        right: 0;
+        bottom: -44px;
+    }
+    .logo-spons img {
+        width: 140px;
+    }
+
+    .title-sponsors {
+        padding:36px 0;
+    }
+    .title-sponsors h3 {
+        font-size: 32px;
+        margin-bottom:24px;
+    }
+   }
+@media (max-width: 991px) {
+    p {
+        font-size:16px;
+        line-height: 1.2;
+    }
+.award-winning figure {
+    width: 37%;
+    top:-100px;
+}
+.claim-ticket {
+    padding: 32px 0 0;
+    margin-bottom: 24px;
+}
+.ticket-abs {
+    position: static;
+    margin: 32px 0;
+}
+.inner-sec-ipsc p {
+    font-size: 16px;
+}
+.global-supply h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.venue .date-venue {
+    font-size: 14px;
+}
+.sec-right-global h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.sec-right-global p {
+    font-size: 16px;
+}
+.network-hdn h3 {
+    font-size: 22px;
+}
+.list-sector li {
+    font-size: 16px;
+}
+.list-network li h4 {
+    font-size: 20px;
+}
+.list-network li dfn {
+    font-size: 16px;
+}
+.why-sponsor h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.why-sponsor h3 small {
+    font-size: 16px;
+}
+.why-sponsor h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.list-sponsor li {
+    font-size: 16px;
+}
+.award-sec h4 {
+    font-size: 24px;
+    margin-bottom:12px;
+}
+.sub-head-award {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.award-winning ul li {
+    margin-bottom: 8px;
+    line-height: 1.1;
+    font-size: 16px;
+}
+.award-sec h5 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.claim-ticket h3 {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.list-sponsor {
+    margin-right: 0;
+}
+}
+@media (max-width:800px) {
+    .award-winning figure {
+        width: 37%;
+        top: 0;
+    }
+}
+
+@media (max-width:767px) {
+    section.global-supply {
+        background-size: cover;
+    }
+    .inner-sec-ipsc {
+        padding: 24px 0;
+        gap: 20px;        
+        flex-direction: column;
+    }
+    .global-supply-inner {
+        gap:20px;
+        flex-direction: column;
+        color: #fff;
+        background-color: rgba(0, 0, 0, .5);
+        padding: 16px;
+    }
+    .global-supply h2 {
+        color: #fff;
+    }
+    .global-supply {
+        margin: 0;
+        background-size:100%;
+    }
+    .sec-event-first {
+        padding: 24px 0 0vw;
+        background-size: 8%;
+    }
+    .sec-right-global p {
+        color: #fff;
+        font-size: 16px;
+    }
+    .sec-right-global h3 {
+        color: #fff;
+        font-size: 24px;
+    }
+    .sept-rect {
+        display: none;
+    }
+    .venue {
+        margin: 12px 0 0;
+        padding-bottom: 0;
+    }
+    .venue .date-venue {
+        color: #fff;
+    }
+    .venue .date-venue strong {
+        font-size: 24px;
+        color: #fff;
+    }
+    .network-hdn-inner {
+        height: 72px;
+        width: 67%;
+    }
+    .list-sponsor {
+        margin-left: -10px;
+    }
+    .list-sponsor li {
+        border-right:10px solid #fff;
+        border-bottom: 10px solid #fff;
+        min-height: 200px;
+        width: 50%;
+        padding: 10px;
+        font-size:18px;
+    }
+    .list-sponsor li:last-child {
+        width: 50%;
+    }
+    .award-winning {
+        padding: 16px;
+        margin-bottom: 48px;
+        flex-direction: column;
+    }
+    .award-winning figure {
+        width: 50%;
+        position: static;
+        margin: 24px auto;
+    }
+    .claim-ticket {
+        padding: 16px 0 0;
+        margin-bottom: 0px;
+    }
+    .award-sec .mt-12 {
+        margin-top: 24px;
+    }
+    .ticket-abs {
+        position: static;
+        margin: 32px 0;
+        min-width: inherit;
+        min-height: inherit;
+        background-size: 100% 100%;
+    }
+    .sectors-sec {
+        margin-top: 0;
+    }
+    .sectors-inner {
+        gap: 20px;
+        padding: 16px;
+        flex-direction: column;
+    }
+    .list-sector {
+        padding-top: 0;
+    }
+    .list-title-spons {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .list-title-spons li {
+        margin-bottom: 0;
+    }
+}
+@media (max-width:479px) {
+    ul#default-styled-tab li {
+        padding-left: 0;
+        padding-right: 0;
+        width: 32%;
+        font-size: 12px;
+    }
+    .network-hdn-inner {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+    }
+.why-sponsor {
+    padding: 24px 0;
+}
+.sub-head-award {
+    font-size: 16px;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+.sub-head-award .text-right {
+    text-align: left;
+}
+.claim-ticket h3 {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.mt-12 {
+    margin-top: 0;
+}
+.ticket-abs-right strong {
+    font-size: 18px;
+}
+.ticket-abs-left span {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.ticket-abs-left figure {
+    margin: 12px 0;
+}
+.ticket-abs-left strong {
+    font-size: 12px;
+}
+.logo-spons img {
+    width: 72px;
+}
+.logo-spons {
+    margin-left: -48px;
+}
+}

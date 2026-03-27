@@ -1,0 +1,21 @@
+/* CUSTOM CSS */
+.pl-0i {
+    padding-left: 0 !important;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-35 {
+    margin-top: 35px;
+}
+.loader {
+	background: rgba(0, 0, 0, 0) url("../images/loader.gif") no-repeat scroll center center;
+	height: 100px;
+	left: 50%;
+	margin: -25px 0 0 -50px;
+	position: fixed;
+	top: 50%;
+	width: 100px;
+	z-index: 1051;
+	display: none;
+}

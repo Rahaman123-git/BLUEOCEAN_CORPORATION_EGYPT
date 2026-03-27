@@ -1,0 +1,1475 @@
+/* body{background: url(../images/about-us/about.png) center top no-repeat;}
+.aboutUs-Page { opacity: 0.5;} */
+
+.aboutUs-Page {
+  overflow: hidden;
+}
+
+.aboutUs-Page .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about-mobile-video {
+  display: none;
+}
+.aboutUs-Page .primary-btn{ white-space: nowrap;}
+
+/* Slider nav */
+.tns-outer {
+  position: relative;
+}
+.tns-nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  bottom: 20px;
+  gap: 8px;
+}
+.tns-nav button {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 0;
+}
+.tns-nav button.tns-nav-active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.primary-btn.iconOnly,
+.primary-btn.iconOnly:hover,
+.primary-btn.iconOnly:focus {
+  padding: 0;
+  height: 40px;
+  width: 40px;
+}
+
+.primary-btn.iconOnly:hover img,
+.primary-btn.iconOnly:focus img {
+  width: auto;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+/* top banner */
+.topBanner {
+  position: relative;
+}
+.topBanner .topBannerImg {
+  margin: 0 auto;
+}
+.bannerOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.bannerOverlay .container {
+  padding-top: 115px;
+  /* padding-bottom: 344px; */
+}
+.bannerOverlay .container h1 {
+  width: clamp(150px, 3.1458rem + 27.6852vw, 449px);
+}
+
+/* meet Impacts */
+
+.meetImpacts {
+  background: url(../images/about-us/meetImpactsBG.jpg) center bottom no-repeat;
+  background-size: cover;
+}
+
+.meetImpacts .first-part {
+  margin-bottom: 0px;
+}
+.meetImpacts .first-part .container-free {
+  padding-top: 60px;
+  display: flex;
+  position: relative;
+}
+.meetImpacts .first-part .container::before {
+  content: "";
+  position: absolute;
+  width: 152px;
+  height: 131px;
+  background: url(../images/about-us/meetsImpact-icon.png);
+  top: 141px;
+  right: calc(100% + 40px);
+}
+
+.meetImpacts .first-part .left-content {
+  width: 36%;
+  margin-left: 14vw;
+}
+.meetImpacts .first-part h2 {
+  font-size: 45px;
+  line-height: 1;
+  margin-bottom: 115px;
+  color: #0c1895;
+}
+.meetImpacts .first-part h2 strong {
+  display: block;
+  letter-spacing: 0.8px;
+}
+.meetImpacts .first-part p {
+  font-size: 21.6px;
+}
+
+.meetImpacts .first-part .right-content {
+  flex: 1;
+  display: flex;
+}
+.meetImpacts .first-part .right-content a {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.meetImpacts .first-part .right-content a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: calc(100% + 133px);
+  width: 50.3vw;
+  background-color: #636363;
+  clip-path: polygon(300px 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+
+.meetImpacts .first-part .right-content a span {
+  color: white;
+  font-size: 34px;
+  position: relative;
+  z-index: 2;
+  line-height: 1;
+  top: -27px;
+  left: -61px;
+}
+
+.meetImpacts .second-part {
+  padding-bottom: 160px;
+}
+.meetImpacts .second-part .container {
+}
+.meetImpacts .second-part h3 {
+  font-size: 45.8px;
+  color: #0c1895;
+  letter-spacing: -0.3px;
+  margin-bottom: 20px;
+}
+.meetImpacts .pillerList {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 34px;
+}
+.meetImpacts .listItem {
+  flex: 1;
+  color: white;
+  padding: 18px 47px 0;
+  display: flex;
+  flex-direction: column;
+}
+.meetImpacts .listItem:first-child { background-color: #0261fa;}
+.meetImpacts .listItem:first-child:hover{ background: linear-gradient(118.8deg, #0261FA 0.18%, #0323C3 101.37%);}
+
+.meetImpacts .listItem { background-color: #053dd9;}
+.meetImpacts .listItem:hover { background: linear-gradient(118.23deg, #053DD9 7.61%, #032173 111.39%);}
+
+.meetImpacts .listItem:last-child { background-color: #0c1896;}
+.meetImpacts .listItem:last-child:hover { background: linear-gradient(122.76deg, #1324D4 22.64%, #040B56 108.92%);}
+
+.meetImpacts .listItem .infoContent{ position: relative;  flex: 1;}
+.meetImpacts .listItem .show{}
+.meetImpacts .listItem .hide{display: none;}
+.meetImpacts .listItem:hover .show{display: none;}
+.meetImpacts .listItem:hover .hide{display: block;}
+
+.meetImpacts .listItem h4 {
+  font-size: 42px;
+  line-height: 0.9;
+  margin-bottom: 27px;
+}
+.meetImpacts .listItem h4 strong {
+  display: block;
+}
+.meetImpacts .listItem p {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+}
+.meetImpacts .listItem span.moduleName {
+  font-size: 45px;
+  line-height: 1.4;
+  display: block;
+  font-weight: 200;
+  opacity: 0.60;
+}
+
+.meetImpacts .bottom-para {
+  max-width: 995px;
+}
+.meetImpacts .bottom-para p {
+  font-size: 33px;
+  line-height: 1.2;
+  letter-spacing: 0.1px;
+  margin-bottom: 74px;
+}
+.meetImpacts .bottom-para p strong {
+  color: #0c1895;
+  display: block;
+  margin-top: 5px;
+}
+
+/* our Vision */
+.ourVision {
+}
+.ourVision .first-part {
+  /* height: 532px; */
+}
+.ourVision .visionSlider .visionImg {
+  margin: 0 auto;
+}
+.ourVision .second-part .container {
+  padding: 45px 0 45px 650px;
+  min-height: 546px;
+}
+.ourVision .second-part .container p {
+  font-size: 29px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.visionHeading-Wrapper {
+  position: relative;
+}
+.visionHeading {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 32%;
+  color: white;
+}
+.visionHeading::before {
+  content: "";
+  position: absolute;
+  background: url(../images/about-us/visionHeadingBG.png) right center no-repeat;
+  width: 100%;
+  height: 1226px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  background-size: cover;
+}
+
+.smallLogo {
+  margin-top: -97px;
+  margin-bottom: 30px;
+}
+
+.visionHeading h2 {
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.visionHeading strong {
+  display: block;
+  font-size: 33px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+/* core Value */
+.coreValue {
+  padding-top: 90px;
+  position: relative;
+}
+.coreValue h2 {
+  font-size: 42px;
+  color: #0c1895;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.coreValue .coreValue-container {
+  position: relative;
+}
+.coreValue .coreValueBG {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.coreValue .coreValueBG img {
+  height: 705px;
+  object-fit: cover;
+  object-position: center bottom;
+}
+.coreValue .container {
+  position: relative;
+  color: white;
+  position: relative;
+  margin-top: -90px;
+}
+.banner-content {
+  position: absolute;
+  bottom: 120px;
+  width: 37vw;
+  left: 33vw;
+}
+
+.banner-content p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.value-list {
+  display: flex;
+  padding-right: 6%;
+  padding-top: 65px;
+  padding-bottom: 57px;
+  position: relative;
+  padding-top: 34px;
+  padding-bottom: 48px;
+left: -6vw;
+}
+
+.slider-bg {
+  position: absolute;
+  width: 797px;
+  right: 1vw;
+  top: 30px;
+}
+.bg-transparent-blue.new-clip-corner {
+  display: block;
+  clip-path: polygon(0 0, 80% 0%, 90% 100%, 0% 100%);
+  background-color: #0D1456
+}
+.slider-container.cert-slide-content.about-page-slider {
+    margin-left: 9vw;
+    padding-top: 2vw;
+}
+.certificate-slider-new .panic-slider img {
+  max-width: 280px;
+}
+.corner-triangle {
+  content: "";
+  position: absolute;
+  height: 51px;
+  width: 60px;
+  bottom: 0;
+  left: 88%;
+  background-color: #00a0e3;
+  clip-path: polygon(0 0, 58% 100%, 100% 0);
+  z-index: 1;
+}
+.value-list .listItem {
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.value-list .listItem:first-child {
+  width: 15%;
+  margin-right: 4%;
+}
+.value-list .listItem:nth-child(2) {
+  width: 17.7%;
+  margin-right: 2.4%;
+}
+.value-list .listItem:nth-child(3) {
+  width: 15%;
+  margin-right: 3.4%;
+}
+.value-list .listItem:nth-child(4) {
+  width: 16%;
+  margin-right: 3.1%;
+}
+.value-list .listItem:last-child {
+  width: 20%;
+}
+.value-list .listItem h2 {
+  font-weight: 300;
+  color: white;
+  letter-spacing: -1px;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.value-list .listItem p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  max-width: 170px;
+}
+
+/* our Journey */
+.ourJourney {
+}
+.ourJourney .container {
+  padding-top: 84px;
+  padding-bottom: 91px;
+}
+.ourJourney .logoicons {
+  margin-bottom: 32px;
+}
+.ourJourney h2 {
+  font-size: 34px;
+  color: #0c1895;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.ourJourney p {
+  font-size: 34px;
+  color: #00a0e3;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* miles Stones */
+.milesStones {
+  overflow: hidden;
+}
+.milesStones .container {
+  padding-bottom: 152px;
+}
+.milesStones .tabs-content {
+  display: flex;
+  justify-content: space-between;
+  min-height: 534px;
+}
+
+.milesStones .left-content {
+  width: 40%;
+  position: relative;
+  z-index: 1;
+  clip-path: polygon(-50% 0%, 96% 0%, 123% 100%, -50% 100%);
+             
+}
+.milesStones .milesStonesHeading {
+  padding-top: 22px;
+  padding-bottom: 28px;
+  position: relative;
+}
+.milesStones .milesStonesHeading::before {
+  content: "";
+  position: absolute;
+  background-color: #00a0e3;
+  height: 100%;
+  width: 60vw;
+  right: -5vw;
+  top: 0;
+}
+.milesStones .right-content::after {
+  content: "";
+  position: absolute;
+  background-color: #0c1895;
+  height: 100%;
+  width: 60vw;
+ left: -5vw;
+  top: 0;
+  z-index: -1;
+}
+.milesStones .logo-white {
+  margin-bottom: 23px;
+  position: relative;
+}
+.milesStones-date {
+  font-size: 94px;
+  line-height: 1;
+  position: relative;
+  color: white;
+}
+.milesStones-content {
+  padding: 32px 0;
+  width: 88%;
+}
+.milesStones-content h3 {
+  font-size: 26.6px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.milesStones-content p {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  max-width: 467px;
+}
+
+.milesStones .right-content {
+  width: 60%;
+  color: white;
+  position: relative;
+  margin-bottom: 120px;
+  z-index: 2;
+  background-color: #0c1895;
+  padding-left: 10%;
+  clip-path:polygon(0% 0%, 100% -134%, 150% 100%, 11% 100%);
+  position: relative;
+  top: 60px;
+}
+
+.milesStones .right-content .blueBG::before {
+  content: "";
+  height: 64px;
+  background-color: white;
+  display: block;
+}
+.milesStones .right-content .tabContent {
+  position: relative;
+  z-index: 2;
+}
+.milesStones .right-content ul {
+  list-style: disc;
+  margin-left: 23px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+.milesStones .right-content ul li {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.milesStones .right-content .primary-btn {
+  font-size: 20.7px;
+}
+
+.milesStones .tabsList {
+}
+.milesStones .tabsList ul {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #8D8D8D;
+}
+.milesStones .tabsList ul li {
+  font-size: 24px;
+  padding: 0;
+}
+.milesStones .tabsList ul li button {
+  position: relative;
+  padding: 12px 0;
+  border-bottom: 3px solid transparent;
+}
+
+.milesStones .tabsList ul li button:hover {
+  color: #0c1896;
+}
+.milesStones .tabsList ul li button[aria-selected="true"] {
+  border-color: #0c1896;
+  font-weight: 700;
+  color: #0c1896;
+}
+.right-content.small-text ul li {
+  font-size: 18px;
+}
+.milesStones .tabsList ul li button[aria-selected="true"]::after{
+  content: "";
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  width: 40px;
+  height: 34px;
+  background: url(../images/about-us/activeTab-icon.svg);
+  transform: translateX(-50%);
+}
+.ab-con {
+    padding: 16px 24px 16px 24px;
+    margin-left: 1.25rem;
+    font-size: 18px;
+    display:flex;
+}
+.ab-con img{margin-left: 10px;}
+/* our Objectives */
+.ourObjectives {
+  padding-top: 76px;
+  padding-bottom: 60px;
+  background: url(../images/about-us/bg-about-us.png) no-repeat;
+  background-size: cover;
+}
+.ourObjectives .container {
+}
+.ourObjectives h2 {
+  font-size: 42px;
+  color: #0c1895;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 56px;
+}
+.ourObjectives .objectivesContent {
+  display: flex;
+  padding: 47px 65px 34px;
+  border: solid 3px white;
+}
+.ourObjectives .objectivesContent .objectiveIcon {
+  width: 16.5%;
+  margin-top: 26px;
+}
+.ourObjectives .objectivesContent .objectivesList {
+  flex: 1;
+  padding-left: 6.5%;
+}
+.ourObjectives .objectivesContent .objectivesList ul {
+  list-style: disc;
+  margin-left: 25px;
+  padding-top: 9px;
+}
+.ourObjectives .objectivesContent .objectivesList ul li {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+.objectivesContent.no-deco {
+  border: 0;
+}
+.objectivesContent.no-deco .objectivesList p {
+  color: #0C1895;
+  font-size: 20px;
+  max-width: 678px;
+}
+
+/* awards & Recognition */
+.awardsRecognition {
+  padding-top: 6vw;
+  background: url(../images/about-us/awardsRecognitionBG.jpg) no-repeat;
+     background-size: cover;
+    position: relative;
+    padding-bottom: 13vw;
+}
+.awardsRecognition .container {
+  position: relative;
+  padding-bottom: 26px;
+}
+.awardsRecognition .heading-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 39%;
+}
+.awardsRecognition .heading-text h2 {
+  font-size: 38.6px;
+  color: #0c1895;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.awardsRecognition .heading-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1.3px;
+}
+.awardsRecognition .content-bottom {
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  width: 50%;
+padding-left: 12vw;
+}
+.awardsRecognition .content-bottom .logoWrapper {
+  margin-bottom: 47px;
+}
+.awardsRecognition .blue-strip {
+  position: relative;
+  min-height: 246px;
+  padding: 5.7% 12% 0 10.6%;
+}
+.awardsRecognition .blue-strip::before {
+  content: "";
+  background: linear-gradient(90deg, #0C1895 1.93%, #00A0E3 101.04%);
+  clip-path:polygon(12% 0px, 100% 0px, 100% 100%, 0 100%);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50vw;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+.awardsRecognition .blue-strip::after {
+  content: "";
+  background: url(../images/about-us/blue-strip-arrow.png) no-repeat;
+  position: absolute;
+  left: -4px;
+  top: -2px;
+  height: 56px;
+  width: 66px;
+  z-index: 2;
+}
+.awardsRecognition .blue-strip p {
+  font-size: 38px;
+  color: white;
+  line-height: 1.3;
+  font-weight: 600;
+  position: relative;
+  z-index: 3;
+}
+.awardsSlider-warapper .sliderContent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+.awardsSlider-warapper .sliderContent .awardImage-left {
+  /* background: url(../images/about-us/awards-leftBG.png) center bottom no-repeat; */
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 127px;
+  padding-bottom: 120px;
+  margin-right: 21%;
+  position: relative;
+}
+
+.awardsSlider-warapper .sliderContent .awardImage-left::before{
+  content: url(../images/about-us/award-placeholder.png);
+}
+
+.awardsSlider-warapper .sliderContent .awardImage-left .logoWrapper{
+  max-width: 328px;
+  width: 100%;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  text-align: center;
+}
+
+.awardsSlider-warapper .sliderContent .awardImage-left .logoWrapper img{display: inline-block;}
+
+.awardsSlider-warapper .sliderContent .awardImage-left .logoicon{
+  max-width: 221px;
+  margin: auto;
+}
+
+.awardsSlider-warapper .sliderContent .awardImage-right {
+  /* background: url(../images/about-us/awards-rightBG.png) center bottom no-repeat; */
+  background-size: contain;
+  width: 40%;
+  max-width: 570px;
+  margin-bottom: 152px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0 72px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.awardsSlider-warapper .sliderContent .awardImage-right .logoWrapper{
+    max-width: 218px;
+    width: 41%;
+    text-align: center;
+}
+
+.awardsSlider-warapper .sliderContent .awardImage-right .logoWrapper img{display: inline-block;}
+
+.awardsSlider-nav-bottom{
+  position: absolute;
+    right: 0;
+    bottom: 43px;
+    width: 35.8%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+
+.awardsSlider-nav-bottom .awardsSlider-nav{display: flex;
+      gap: 12px;}
+
+.awardsSlider-nav-bottom .awardsSlider-nav .primary-btn{
+  width: 47px;
+  height: 46px;
+}
+
+.awardsSlider-nav-bottom .primary-btn.transparentBG{letter-spacing: 1px; background-color: transparent; color: #0c1895;}
+.awardsSlider-nav-bottom .primary-btn.transparentBG img,
+.awardsSlider-nav-bottom .primary-btn.transparentBG:hover img{width: 14px;}
+
+/* success Journey */
+
+
+.successJourney {
+}
+.successJourney .container.successHeading {
+  padding-top: 77px;
+  padding-bottom: 64px;
+}
+.successJourney h2 {
+  font-size: 38px;
+  color: #0c1895;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.successJourney .gray-strip {
+  background-color: #ebebeb;
+}
+.successJourney .gray-strip .container {
+  padding-top: 32px;
+  padding-bottom: 43px;
+  display: flex;
+  gap: 52px;
+}
+.successJourney .gray-strip .container .success-icon {
+  position: relative;
+  margin-top: -85px;
+}
+.successJourney .gray-strip .container p {
+  font-size: 35px;
+  letter-spacing: 0.2px;
+  width: 52%;
+  line-height: 1.2;
+}
+.successJourney .greatSuccess {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.successJourney .greatSuccess p {
+  font-size: 35.3px;
+  color: #0c1895;
+}
+.successJourney .greatSuccess a.primary-btn {
+  width: 150px;
+  white-space: nowrap;
+}
+.meetImpacts .first-part h2{
+  margin-bottom: 50px !important;
+}
+.right-content.video-about {
+  position: relative;
+  top: -100px;
+  /* clip-path: polygon(38% 0%, 100% 0%, 100% 100%, 0 100%); */
+}
+.right-content.video-about video {
+  height: 480px;
+ 
+}
+.coreValue::before {
+  content: "";
+  position: absolute;
+  width: 237px;
+  height: 381px;
+  background: url(../images/about-us/coreValue-icon.png) no-repeat;
+  right: 0;
+  top: -19px;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.second-part {
+  margin-top: -61px;
+}
+.about-slide-text p {
+  font-size: 22px;
+}
+.about-slide-text {
+  padding-top: 25px;
+  padding-left: 42%;
+  min-height: 350px;
+  padding-right: 12%;
+}
+.smallLogo {
+  width: 386px;
+  padding-left: 15%;
+}
+
+.smallLogo img {
+  max-width: 235px;
+}
+.smallLogo h2{
+  line-height: 1;
+  font-size: 44px !important;
+}
+.smallLogo h3{
+  font-size: 28px;
+}
+.about-slide-text {
+  padding-top: 25px;
+  padding-left: 42%;
+  min-height: 350px;
+  padding-right: 12%;
+}
+.about-slide-text ul li {
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.aboutUs-Page .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+.slider-back-trangle {
+  width: 55vw;
+  position: absolute;
+  right: 1.5vw;
+  top: 11vw;
+}
+
+img.small-whiteangle.w-full {margin-left: -153px;}
+
+img.small-whiteangle {
+  width: auto;
+  height: auto;
+  max-width: 47vw;
+  margin-left: -14vw !important;
+}
+
+img.big-whiteangle.w-full {
+  width: 39.6vw;
+}
+.awardsSlider-warapper {
+  width: 46vw;
+  margin-left: auto;
+}
+.tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .sliderContent .awardImage-left{ transition: all ease-in-out 0.3s 0s; transform: scale(0.6); position: relative;right: 50px;bottom: -60px;}
+.tns-slide-active .sliderContent .awardImage-left{ transform: scale(1.2); transition: all ease-in-out 0.3s 0s;bottom: 0; }
+.certificate-slider-new  .panic-slider {
+    margin-top: 30px;
+    margin-left: 0vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container.cert-slide-content.about-page-slider::after{
+        width: 100%;
+    height: 574px;
+}
+.slider-container.cert-slide-content.about-page-slider::before{
+      display: none;
+}
+@media only screen and (Min-width: 2400px) {
+  .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .sliderContent .awardImage-left{ right: 50px;bottom: 0px;}
+  .awardsSlider-warapper {
+    width: 40vw;
+}
+.slider-back-trangle {
+  width: 47vw;
+  right: 0;
+  top: 4vw;
+}
+.awardsSlider-warapper .sliderContent .awardImage-left {
+  width: 52%;
+  margin-top: 127px;
+  padding-bottom: 120px;
+  margin-right: 0;
+}
+.tns-slide-active .sliderContent .awardImage-left{bottom: 20px; left: 0px;}
+img.small-whiteangle {
+  max-width: 69vw;
+  margin-left: -10vw !important;
+}
+.awardsSlider-warapper {
+  width: 35vw;
+  margin-left: auto;
+  margin-right: 7vw;
+}
+}
+
+@media only screen and (Max-width: 1600px) {
+  .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .sliderContent .awardImage-left{  position: relative;    left: 42px;
+    bottom: auto;right: auto;}
+  .tns-slide-active .sliderContent .awardImage-left{ transform: scale(1.2); transition: all ease-in-out 0.3s 0s;bottom: 80px; left: 80px;}
+.slider-back-trangle {
+  width: 52vw;
+  right: 1.5vw;
+  top: 11vw;
+}
+img.small-whiteangle {
+  max-width: 30vw;
+}
+.awardsSlider-warapper {
+  width: 47vw;
+  margin-left: auto;
+  margin-right: 1vw;
+}
+.awardsSlider-warapper .sliderContent {
+  justify-content: center;
+}
+
+
+}
+@media only screen and (Max-width: 1480px) {
+  
+
+  .meetImpacts .first-part h2,
+  .meetImpacts .listItem h4,
+  .coreValue h2,
+
+
+  .meetImpacts .listItem span.moduleName,
+  .meetImpacts .second-part h3{ font-size: clamp(25px, 1.1458rem + 1.8519vw, 45px);}
+
+  .visionHeading h2{font-size: clamp(30px, 1.25rem + 2.7778vw, 60px); line-height: 1.2;}
+  .visionHeading strong{font-size: clamp(18px, 0.8125rem + 1.3889vw, 33px); line-height: 1.2;}
+
+  .awardsRecognition .heading-text h2,
+  .successJourney h2,
+  .ourJourney h2,
+  .successJourney .greatSuccess p {font-size: clamp(18px, 0.7083rem + 1.8519vw, 38px);}
+
+  .value-list .listItem p,
+  .milesStones-content p,
+  .meetImpacts .first-part p,
+  .milesStones .right-content ul li,
+  .ourObjectives .objectivesContent .objectivesList ul li,
+  .milesStones .tabsList ul li,
+  .awardsRecognition .heading-text p{font-size: 18px;}
+
+  .milesStones .right-content{margin-bottom: 60px;}
+
+  .milesStones .right-content .blueBG { left: -47.7%; width: 68vw;}
+
+  .meetImpacts .listItem p,
+  .ourJourney p, .successJourney .gray-strip .container p { font-size: 21px;}
+
+  .meetImpacts .bottom-para p,
+  .awardsRecognition .blue-strip p,
+  .ourVision .second-part .container p { font-size: 26px;}
+  
+  .ourVision .second-part .container p{ margin-bottom: 48px;}
+
+  .meetImpacts .second-part{ padding-bottom: clamp(40px, 0rem + 11.1111vw, 160px);}
+  .meetImpacts .listItem{ padding-left: 30px; padding-right: 30px;}
+  .meetImpacts .first-part h2{ margin-bottom: clamp(30px, 0.1042rem + 7.8704vw, 115px);}
+
+  .milesStones .container { padding-bottom: 60px;}
+  .milesStones .tabsList { overflow: auto; padding-bottom: 40px;}
+  .milesStones .tabsList ul { gap: 40px;}
+
+  .awardsRecognition .blue-strip{min-height: 0;
+    padding: 30px 12% 40px 17.6%;}
+
+  .ourObjectives {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 80px;
+  }
+  img.small-whiteangle {
+    margin-left: -18vw !important;
+}
+img.big-whiteangle.w-full {
+  width: 47.6vw;
+}
+img.small-whiteangle {
+  max-width: 32vw;
+}
+.awardsSlider-warapper .sliderContent .awardImage-left {
+  width: 65%;
+  margin-top: 60px;
+  padding-bottom: 120px;
+  margin-right: 0%;
+}
+
+.tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .sliderContent .awardImage-left{  position: relative;right: -30px;bottom: -20px;}
+}
+@media only screen and (min-width: 992px) and (Max-width: 1480px) {
+
+  .slider-bg {
+    position: absolute;
+    width: 622px;
+    right: 0vw;
+    top: 30px;
+  }
+
+  .visionHeading .smallLogo{margin: 0;}
+  .ourVision .second-part .container{padding-left: 488px; min-height: clamp(22.5rem, 18.625rem + 17.2222vw, 34.125rem);}
+  img.small-whiteangle {
+    margin-left: -15vw !important;
+}
+img.big-whiteangle.w-full {
+  width: 47.6vw;
+}
+img.small-whiteangle {
+  max-width: 32vw;
+}
+.awardsSlider-warapper .sliderContent .awardImage-left {
+  width: 65%;
+  margin-top: 12px;
+  padding-bottom: 120px;
+  margin-right: 0%;
+}
+
+.tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .sliderContent .awardImage-left{  position: relative;right: -30px;bottom: -20px;}
+
+
+
+}
+
+
+@media only screen and (Max-width: 1366px) {
+.slider-back-trangle {
+  width: 52vw;
+  right: 1.5vw;
+  top: 10vw;
+}
+.slider-bg {
+  position: absolute;
+  width: 622px;
+  right: -2vw;
+  top: 30px;
+}
+.tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .sliderContent .awardImage-left{ position: relative;right: auto;bottom: -60px;left: 120px;}
+.tns-slide-active .sliderContent .awardImage-left{ bottom: 0;left: 100px; }
+.awardsSlider-warapper {
+  margin-right: 0vw;
+}
+
+}
+
+
+@media only screen and (Max-width: 991px) {
+  .coreValue .container {
+    position: relative;
+    margin-top: 0;
+}
+  .meetImpacts .first-part::before{display: none;}
+
+  .meetImpacts .first-part .container{flex-direction: column; gap: 20px;}
+  .meetImpacts .first-part .left-content{width: 100%;}
+  .meetImpacts .first-part .right-content a.newsLink{
+    padding: 30px;
+  }
+  .meetImpacts .first-part .right-content a::before{width: 100%; height: 100%;
+    clip-path: polygon(212px 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .meetImpacts .first-part .right-content a span{ position: static;}
+
+  .meetImpacts .pillerList{flex-direction: column;}
+
+  .meetImpacts .second-part {
+    padding-bottom: 60px;
+}
+
+  .ourVision .first-part{margin-bottom: 40px;}
+
+  .visionHeading {
+    position: relative;
+    transform: none;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    padding: 30px;
+}
+  .visionHeading::before{
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(212px 0, 100% 0, 100% 100%, 0% 100%);
+    background: linear-gradient(118.8deg, #0261FA 0.18%, #0323C3 101.37%);
+  }
+  
+  .smallLogo { margin: 0px;}
+
+  .ourVision .second-part .container{padding-left: 20px; padding-bottom: 150px; min-height: 0; }
+
+  .coreValue .coreValueBG{position: static;}
+  .coreValue .coreValueBG img{height: auto;}
+  .coreValue .container .banner-content{height: auto; padding-top: 40px ; }
+  .coreValue .container .banner-content p{color: black; max-width: 100%; width: 100%;}
+  .coreValue-container .value-list{flex-wrap: wrap; }
+ 
+  .coreValue-container .value-list .listItem{width: 30%; margin-bottom: 30px;}
+
+
+  .milesStones .container{padding-bottom: 60px;}
+  .milesStones .tabs-content{flex-direction: column;}
+  .milesStones .left-content, .milesStones .right-content{width: 100%;}
+
+  .milesStones .milesStonesHeading{padding-left: 30px;}
+  .milesStones .milesStonesHeading::before{right: 0; width: 100%;}
+
+  .milesStones .right-content ul {
+    margin-left: -6px;
+    width: 100%;
+    padding-top: 20px;
+}
+  .milesStones .right-content .blueBG{
+    display: none;
+  }
+  .milesStones .right-content{ padding: 30px; background-color: #0c1895; margin-bottom: 40px;}
+  .ourObjectives{margin-bottom: 0; padding-top: 60px; padding-bottom: 60px;}
+  .ourObjectives .objectivesContent{padding: 30px;}
+
+
+  .awardsRecognition .heading-text{position: static; width: 100%;}
+
+  .awardsSlider-warapper{padding-bottom: 40px; position: relative;}
+  .awardsSlider-warapper .sliderContent{justify-content: flex-start;}
+  .awardsSlider-warapper .sliderContent .awardImage-left{margin-right: 0; width: 90%; 
+    margin-top: 40px;}
+
+  .awardsSlider-warapper .sliderContent .awardImage-right{width: 45%; margin-bottom: 90px;}
+
+  .awardsSlider-nav-bottom {width: 330px; bottom: 0;}
+
+  .awardsRecognition .content-bottom{position: static; width: 100%;}
+  .awardsRecognition .blue-strip::before{width: 100vw;}
+
+  .successJourney .gray-strip .container .success-icon{margin-top: -60px;}
+  .successJourney .gray-strip .container .success-icon img{ width: 122px;}
+
+  .successJourney .gray-strip .container{flex-direction: column;}
+  .successJourney .gray-strip .container p{width: 100%;}
+  .milesStones-date {
+    font-size: 50px;
+}
+.milesStones .left-content {
+  clip-path: polygon(-52% 0%, 100% 0%, 123% 100%, -50% 100%);
+}
+.milesStones .right-content {
+  margin-bottom: 50px;
+  z-index: 2;
+  background-color: #0c1895;
+  height: auto;
+  padding-left: 10%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  top: 0;
+}
+.right-content.video-about {
+  clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+}
+.meetImpacts .first-part .right-content {
+  padding: 20px 0;
+}
+.meetImpacts .first-part .left-content {
+  
+  margin-left: 15px;
+}
+.meetImpacts .first-part .container-free {
+  padding-top: 40px;
+  display: flex;
+  position: relative;
+}
+.right-content.video-about {
+  top: 0;
+}
+}
+@media only screen and (min-width: 768px) and (Max-width: 991px) {}
+@media only screen and (max-width: 767px) {
+.milesStones .right-content ul li{font-size:15px}
+.awardsSlider-warapper.aboutpage-slider-cert {
+    width: 100%;
+        padding: 0;
+}
+.controls.certificate-arrow.home-certificate-slide {
+    bottom: -13px !important;
+}
+.bannerOverlay .container {
+    padding-top: 21px;
+    padding-bottom: 0;
+}
+.bannerOverlay .container h1 img {
+    width: 190px;
+}
+
+.slider-container.cert-slide-content.about-page-slider {
+    margin: 0;
+}
+.slider-container.cert-slide-content.about-page-slider::after {
+    width: 100%;
+    height: 90% !important;
+}
+.certificate-slider-new .panic-slider img {
+    max-width: 124px;
+}
+  .banner-content {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding-bottom: 20px;
+}
+  .meetImpacts .first-part .right-content a{justify-content: flex-start}
+  .meetImpacts .listItem{padding-bottom: 20px;}
+  .meetImpacts .listItem h4{line-height: 1.2;}
+
+  .meetImpacts .bottom-para p strong{margin-top: 12px;}
+
+  .ourVision .second-part .container{padding-bottom: 0;}
+
+  .coreValue-container .value-list .listItem{width: 100%; margin-right: 0;}
+
+  .value-list::before{right: 0;}
+  .value-list .listItem h2{letter-spacing: 0;}
+
+  .coreValue::before{width: 137px;}
+
+  .meetImpacts .first-part .right-content a::before,
+  .awardsRecognition .blue-strip::before,
+  .visionHeading::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(122.76deg, #1324D4 22.64%, #040B56 108.92%)
+  }
+
+  .awardsSlider-warapper .sliderContent .awardImage-right {
+    width: 39%;
+    padding-top: 100px;
+    padding-bottom: 27px;
+  }
+  .awardsSlider-nav-bottom {
+    width: 200px;
+  }
+  .meetImpacts .first-part h2 {
+    margin-bottom: 20px !important;
+}
+.right-content.video-about {
+  top: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);
+}
+.right-content.video-about video {
+  height: auto;
+}
+.smallLogo {
+  width: 100%;
+  padding-left: 0%;
+}
+.smallLogo h2 {
+  font-size: 30px !important;
+}
+.smallLogo h2 {
+  line-height: 1;
+  font-size: 30px !important;
+}
+.about-slide-text {
+  padding-top: 25px;
+  padding-left: 15px;
+  min-height: auto;
+  padding-right: 15px;
+}
+.about-slide-text p, .about-slide-text ul li{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+}
+@media only screen and (max-width: 576px) {
+  .awardsSlider-warapper .sliderContent .awardImage-left {
+    margin-top: 0px;
+    padding: 0;
+}
+.diveder-angle {
+        display: none;
+      
+    }
+}
+
+
+@media (max-width: 480px) {
+  .about-mobile-video {
+    display: block;
+}
+
+    .ourObjectives .objectivesContent {
+       
+        flex-direction: column;
+    }
+
+.ourObjectives .objectivesContent .objectiveIcon {
+    width: 50.5%;
+    margin-top: 26px;
+    margin-left: 64px;
+}
+.ourObjectives .objectivesContent .objectivesList {
+    flex: 1;
+padding-left: 0;
+}
+
+.ourObjectives .objectivesContent .objectivesList ul {
+    list-style: disc;
+    padding-top: 9px;
+   margin-left: 0;
+}
+  .coreValue {
+    padding-top: 12px;
+    position: relative;
+
+    margin-top: 10px;
+  }
+.meetImpacts .bottom-para p
+ {
+    margin-bottom: 15px;
+}
+.coreValue {
+    padding-top: 12px;
+   
+}
+.corner-triangle {
+display:none;
+}
+
+
+.value-list .listItem p {
+max-width:100%;
+}
+.value-list {padding-bottom:0;}
+.ourJourney .container {
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.bg-transparent-blue.new-clip-corner {
+Clip-path:none;
+}
+}
+
+.awardsSlider-warapper .sliderContent .awardImage-left::before {
+  content: url(../images/about-us/award-placeholder.png);
+  height: 430px;
+}
+a.btn.primary-btn.about-btn-mobile {
+  padding: 0;
+  font-size: 18px;
+  text-wrap: auto;
+}
+.meetImpacts .second-part {
+    padding-bottom: 60px;
+    margin:auto;
+}
+
+.bannerOverlay.about-overlay {
+  top: 0;
+}
+.meetImpacts .first-part .right-content a span {
+  font-size: 28px;
+}
+.meetImpacts .bottom-para p, .awardsRecognition .blue-strip p, .ourVision .second-part .container p {
+  font-size: 34px;
+}
+}

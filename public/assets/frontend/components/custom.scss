@@ -1,0 +1,56 @@
+/* Custom CSS v24.03.25:01*/
+
+/*Affiliation Section Start*/
+.partner-listing ul {
+    @apply flex flex-wrap justify-between;
+  }
+  .partner-listing ul li {
+    @apply w-full mx-auto my-10;
+  }
+  .full-form-title {
+    @apply text-[1.75rem] font-normal text-[#1E4784] mb-2.5 lg:pl-[10%] pl-0;
+  }
+  .partner-card {
+    @apply flex flex-col lg:flex-row;
+  }
+  .partner-listing ul li .partner-logo {
+    @apply w-2/5 text-center flex items-center justify-center max-h-[272px];
+  }
+  .partner-logo img {
+    @apply w-full lg:p-12 mb-10 p-0;
+  }
+  .disc-info {
+    @apply text-white pl-[10%] p-[30px];
+    background: #1e4784; 
+    clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .partner-card .short-form-title {
+    @apply text-2xl font-medium;
+  }
+  .collapse-box {
+    @apply p-8;
+    background: #eeeeee;
+  }
+  .partner-listing ul .partner-checklisting {
+    @apply flex gap-1.5 w-[90%] justify-start flex-wrap flex-row ml-auto;
+  }
+  .partner-listing ul .partner-checklisting li {
+    @apply flex w-auto flex-wrap text-white m-0 px-2.5 py-[7px] rounded-[3px];
+    background: #1e4784;
+  }
+  .partner-listing ul .partner-checklisting li.active {
+    background: #00a0e3;
+  }
+  .arrow-down {
+    @apply border mt-4 border-solid border-white;
+  }
+  section.aff-title {
+    @apply mt-[30px] mb-0 mx-0;
+  }
+  .aff-title h3 {
+    @apply font-normal text-[32px] text-primary;
+  }
+  .primary-outline{
+    @apply border-[color:var(--primary)] text-[color:var(--primary)] ml-[10%] mt-5 px-[30px] py-[13px] rounded-[3px] border-solid border-2;
+  }
+  /*Affiliation Section End*/

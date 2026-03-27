@@ -1,0 +1,995 @@
+@keyframes fadeInRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(60px); /* start from right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* end at position */
+  }
+}
+
+.slider-content p,
+.slider-content h1 {
+  opacity: 0;
+  animation: fadeInRightToLeft 1s ease-out forwards;
+}
+
+/* First animate <p> */
+.slider-content p {
+  animation-delay: 0.3s;
+}
+
+/* Then animate <h1> after <p> */
+.slider-content h1 {
+  animation-delay: 1s;
+}
+
+/************Below slider************/
+@keyframes fadeInRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(60px); /* start from right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* end at position */
+  }
+}
+
+.a1, .a2, .a3, .a4, .a5, .a6, .a7, .belowright, .condivTxt, .condivRight, .arbic-heading, .slide-banner-content, .slide-banner-content, .below-head-left, .award-banner-content h1, .award-banner-content h2, .award-banner-content p, .show-alumuni-arbic h2, .show-alumuni-arbic h1, .show-alumuni-arbic p, .b2b-contain-logo, .b2b-contain-small, .b2b-contain-head, .b2b-contain-txt, .b2b-contain-color, .b2b-contain-buttn, .mv-head-txt, .vot-sec-head h2, .ue-head, .ue-right, .top-foot {
+  opacity: 0;
+  animation: fadeInRightToLeft 1s ease-out forwards;
+  animation-fill-mode: forwards;
+}
+
+
+.a1 {
+  animation-delay: 1.5s;
+}
+
+.a2 {
+  animation-delay: 1.9s;
+}
+
+.a3 {
+  animation-delay: 2.2s;
+}
+.a4 {
+  animation-delay: 2.5s;
+}
+.a5 {
+  animation-delay: 2.8s;
+}
+.a6 {
+  animation-delay: 3.1s;
+}
+.a7 {
+  animation-delay: 3.4s;
+}
+.belowright {
+  animation-delay: 3.7s;
+}
+.condivTxt {
+	animation-delay: 4.1s;
+}
+.condivRight {
+	animation-delay: 4.3s;
+}
+.arbic-heading {
+	animation-delay: 4.7s;
+}
+.slide-banner-content {
+	animation-delay: 5.1s;
+}
+.below-head-left {
+	animation-delay: 5.5s;
+}
+.award-banner-content h1 {
+	animation-delay: 5.9s;
+}
+.award-banner-content h2 {
+	animation-delay: 6.2s;
+}
+.award-banner-content p {
+	animation-delay: 6.5s;
+}
+.show-alumuni-arbic h2 {
+	animation-delay: 6.9s;
+}
+
+
+.show-alumuni-arbic h1 {
+	animation-delay: 7.1s;
+}
+.show-alumuni-arbic p {
+	animation-delay: 7.4s;
+}
+.b2b-contain-logo {
+	animation-delay: 8.8s;
+}
+.b2b-contain-small {
+	animation-delay: 9.2s;
+}
+.b2b-contain-head {
+	animation-delay: 9.5s;
+}
+.b2b-contain-txt {
+	animation-delay: 9.8s;
+}
+.b2b-contain-color {
+	animation-delay: 10.1s;
+}
+.b2b-contain-buttn {
+	animation-delay: 10.3s;
+}
+.mv-head-txt {
+	animation-delay: 10.7s;
+}
+.vot-sec-head h2 {
+	animation-delay: 11.5s;
+	padding-left:10px;
+}
+.ue-head {
+	animation-delay: 12.1s;
+	
+}
+.ue-right {
+	animation-delay: 11.9s;
+	
+}
+.top-foot {
+	animation-delay: 13.0s;
+}
+/*******************************************/
+/****traingle****************/
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px); /* comes from above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initial hidden state */
+.lefttraingle {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.6s ease-out;
+}
+
+/* Animate when in view */
+.lefttraingle.show {
+  animation: fadeInFromTop 1s ease-out forwards;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+
+/**********************two scroller****************/
+.mv-image-galry {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.scroller {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+	overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.scroller01 {
+  animation-name: scrollLeftToRight;
+}
+
+.scroller02 {
+  animation-name: scrollRightToLeft;
+  margin-top: 20px;
+}
+
+.mv-image-single-galry img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+@keyframes scrollLeftToRight {
+  0% {
+    transform: translateX(-0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-0);
+  }
+}
+
+/* Responsive Styling 
+@media (max-width: 768px) {
+  .mv-image-single-galry img {
+    width: auto;
+  }
+*/
+  
+/********city tab***********/
+
+
+.city-tab-container {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.city-image-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.city-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+}
+
+.city-image.active {
+    opacity: 1;
+    display: block;
+}
+
+.city-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.city-nav-btn {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    color: #999;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Default underline for active state */
+.city-nav-btn.active {
+    color: #001489; /* dark blue */
+    font-weight: bold;
+}
+
+.city-nav-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px; /* spacing above triangle */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #001489;
+	
+}
+
+/* Triangle background image on hover */
+.city-nav-btn:hover {
+   
+    color: #001489;
+}
+
+
+.city-nav-btn:hover::after,
+.city-nav-btn.active::after {
+    width: 100%;
+}
+
+.city-nav-btn.active {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@media (max-width: 768px) {
+
+	.city-tab-container {
+	padding: 10px 5px;
+    font-size: 13px;
+	}
+	.city-navigation {
+    gap: 2px;
+    margin-top: 20px;
+		display: block;
+}
+	.city-nav-btn {
+		width: 100%;
+	}
+	.city-image {
+    position: absolute;
+    object-fit: cover;
+
+}
+	
+}
+/************two text slide**************/
+
+
+.slide-div-main .arrow-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.slide-div-main .gray-btn {
+  background-color: gray;
+}
+
+.slide-div-main .blue-btn {
+  background-color: darkblue; /* or use #0000A0 if you want a deeper blue */
+}
+
+.slide-div-main .arrow-btn:hover {
+  opacity: 0.8;
+  background-color: gray;
+}
+
+
+
+.slide-div-main {
+  width:50%;
+  padding: 10px 0;
+  float:left;
+  position:relative;
+ 
+}
+.slide-div img {
+	position:absolute;
+}
+.scroll-slide-sec {
+	
+}
+
+.slide-div-b-color {
+	 background: #618CC8!important;
+}
+
+.slide-div {
+width: 45%;
+    padding: 30px 3% 60px;
+    height: 439px;
+    position: relative;
+    background: #4BA1BE;
+    font-family: 'Inter Custom', serif;
+    overflow: hidden;
+    float: left;
+    margin: 0 14px 0 0;
+}
+
+.slide-content {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 10px; /* for scrollbar spacing */
+  margin-bottom: 50px; /* make space for footer visually */
+  height:280px;
+  padding-left:2%;
+  font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.slide-footer {
+  position: absolute;
+  bottom:40px;
+  left: 8%;
+  right: 4%;
+  font-weight: 800;
+ font-size: 1.125rem;
+}
+.slide-footer span {
+	font-weight:500;
+	font-size: 0.85rem;
+}
+
+/* scrollbar style for content area only */
+.slide-content::-webkit-scrollbar {
+  width:3px;
+}
+
+.slide-content::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+.slide-content::-webkit-scrollbar-thumb {
+  background-color: #00AEEF;
+  border-radius: 10px;
+}
+
+
+
+
+@media (max-width: 853px) {
+  .slide-div {
+    width: 100%;
+  }
+  .slide-div-main {
+    width: 100%;
+}
+.video-slide-sec {
+	width: 100%;
+}
+}
+/**************youtube video slider***************/
+
+.video-slide-sec {
+  margin: auto;
+  text-align: center;
+}
+.video-slide-sec-vid {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height:439px;
+  padding:0 10px;
+}
+
+.slide-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  background:
+    rgba(255, 255, 255, 1.0) 
+    url(../images/bo-ar-logo.png) center center no-repeat;
+  background-size: 100%;
+  z-index: 1;
+}
+
+.slide-iframe.next {
+  z-index: 2;
+}
+
+.video-slide-sec .arrow-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.video-slide-sec .gray-btn {
+  background-color: gray;
+}
+
+.video-slide-sec .blue-btn {
+  background-color: darkblue; /* or use #0000A0 if you want a deeper blue */
+}
+
+.video-slide-sec .arrow-btn:hover {
+  opacity: 0.8;
+  background-color: gray;
+}
+
+/**************Seminarscroller******************************/
+
+
+
+/*************/
+
+.ue-scroll-sec .u-head {
+	color:#fff;
+	font-weight:400;
+	font-size:24px;
+}
+.ue-scroll-sec .u-head-bold {
+	color:#fff;
+	font-weight:800;
+	font-size:32px;
+	text-transform:uppercase;
+}
+.ue-scroll-sec .blue-txt {
+	color:#0C1896;
+	font-weight:600;
+	font-size:24px;
+}
+.ue-scroll-sec .foot-white-txt {
+	color:#fff;
+	font-weight:600;
+	font-size:24px;
+}
+
+/********************/
+.ue-scroll-sec {
+    }
+	
+.slider-track2 {
+  flex-wrap: nowrap; /* Ensures single-line horizontal scroll */
+}
+
+.ue-scroll-sec .slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+}
+
+.ue-scroll-sec .sliden {
+  background: #00a9e0;
+  color: #fff;
+  min-width: 250px;
+  margin: 0 10px;
+  padding: 40px 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.ue-scroll-sec .sliden h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ue-scroll-sec .sliden h2 {
+  font-size: 1.1em;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.ue-scroll-sec .sliden p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.ue-scroll-sec .slider-controls {
+  margin-top: 20px;
+}
+
+.ue-scroll-sec .slider-controls button {
+  background: #0026a3;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1.5em;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.ue-scroll-sec .slider-container {
+  width:540px;
+  margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.ue-scroll-sec .slider-track2 {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.ue-scroll-sec .sliden {
+  min-width: 250px;
+  margin: 0 10px;
+  /* ...other styles... */
+}
+
+/***************Arabic-tab-scroller***********/
+.tab-section .tabs {
+  direction: rtl;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.tab-section section img {}
+
+.tab-section .tabs .content section {
+  display: none;
+  padding: 0;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  min-height: 120px;
+}
+
+.tab-section .tabs ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  position: relative;
+  top: 50px;
+}
+
+.tab-section .tabs ul li {
+  margin: 0 10px;
+  font-size: 45px;
+}
+
+.tab-section .tabs ul label {
+  display: block;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #AAAAAA;
+  border-radius: 0 0 5px 5px;
+  transition: background 0.3s, color 0.3s;
+  font-size: 1.1em;
+  position: relative;
+}
+
+.tab-section .tabs input[type="radio"] {
+  display: none;
+}
+
+/* Active indicator triangle (desktop) */
+.tab-section #tab1:checked ~ ul label[for="tab1"]::after,
+.tab-section #tab2:checked ~ ul label[for="tab2"]::after,
+.tab-section #tab3:checked ~ ul label[for="tab3"]::after,
+.tab-section #tab4:checked ~ ul label[for="tab4"]::after,
+.tab-section #tab5:checked ~ ul label[for="tab5"]::after {
+  content: "";
+  position: absolute;
+  border-bottom: 26px solid #0c1895;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  bottom: -27px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+}
+
+/* Hover & checked label color */
+.tab-section .tabs input[type="radio"]:checked ~ ul label,
+.tab-section .tabs ul label:hover {
+  color: #AAAAAA;
+}
+
+/* Show content when checked */
+.tab-section #tab1:checked ~ .content section:nth-child(1),
+.tab-section #tab2:checked ~ .content section:nth-child(2),
+.tab-section #tab3:checked ~ .content section:nth-child(3),
+.tab-section #tab4:checked ~ .content section:nth-child(4),
+.tab-section #tab5:checked ~ .content section:nth-child(5) {
+  display: block;
+}
+
+/* Active tab label */
+.tab-section #tab1:checked ~ ul label[for="tab1"],
+.tab-section #tab2:checked ~ ul label[for="tab2"],
+.tab-section #tab3:checked ~ ul label[for="tab3"],
+.tab-section #tab4:checked ~ ul label[for="tab4"],
+.tab-section #tab5:checked ~ ul label[for="tab5"] {
+  color: #0018A0;
+  padding-bottom: 0px;
+}
+
+.tab-section .tab-left {
+  float: left;
+  width: 50%;
+  min-height: 150px;
+}
+
+.tab-section .tab-right {
+  float: left;
+  width: 50%;
+  min-height: 150px;
+}
+
+.tab-section .fulltab img {
+  width: 100%;
+}
+
+.tab-section .desk-img {
+  display: block;
+}
+
+.tab-section .mob-img {
+  display: none;
+}
+
+@media (max-width: 959px) { 
+  .traingleSlider .content img { 
+    height: 33% !important; 
+  } 
+  .traingleSlider .slide {
+    height: auto!important; 
+}
+}
+
+@media (max-width: 1024px) {
+
+.tab-section .tabs ul li {
+    margin: 0 10px;
+    font-size: 26px;
+}
+}
+
+@media (max-width: 768px) {
+  .tab-section .desk-img {
+    display: none;
+  }
+
+  .tab-section .mob-img {
+    display: block;
+  }
+
+  .tab-section .tabs ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 14px solid #ccc;
+  }
+
+    .tab-section .tabs ul li {
+        margin: 5px;
+        width: 14%;
+        font-size: 18px;
+    }
+
+  .tab-section .tabs ul label {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    min-width: 70px;
+    text-align: center;
+    position: relative;
+  }
+
+  .tab-section .tab-left,
+  .tab-section .tab-right {
+    float: none;
+    width: 100%;
+  }
+
+  /* Triangle indicator (mobile) */
+  .tab-section #tab1:checked ~ ul label[for="tab1"]::after,
+  .tab-section #tab2:checked ~ ul label[for="tab2"]::after,
+  .tab-section #tab3:checked ~ ul label[for="tab3"]::after,
+  .tab-section #tab4:checked ~ ul label[for="tab4"]::after,
+  .tab-section #tab5:checked ~ ul label[for="tab5"]::after {
+    content: "";
+    position: absolute;
+    border-bottom: 15px solid #0c1895;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+  }
+}
+
+/*************Triangle css animation******************/
+.traingleSlider {
+  position: relative;
+}
+.traingleSlider input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.traingleSlider .wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 60vh;
+  margin: 0 auto;
+  background: #fff;
+ /* box-shadow: 3px 3px 20px #9E9E9E;*/
+  overflow: hidden;
+}
+.traingleSlider .slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 99.2%;
+}
+.traingleSlider .content {
+  width: 100vw;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.traingleSlider .content img {
+  width: 100vw;
+  height: 59.5vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* Automatic fade animation */
+@keyframes autoslide {
+  0%, 33.33% { opacity: 1; pointer-events: auto; }
+  40%, 100% { opacity: 0; pointer-events: none; }
+}
+.traingleSlider .content1 { animation: autoslide 12s infinite; animation-delay: 0s; }
+.traingleSlider .content2 { animation: autoslide 12s infinite; animation-delay: 4s; }
+.traingleSlider .content3 { animation: autoslide 12s infinite; animation-delay: 8s; }
+
+.traingleSlider #auto:checked ~ .wrapper .content1,
+.traingleSlider #auto:checked ~ .wrapper .content2,
+.traingleSlider #auto:checked ~ .wrapper .content3 {
+  opacity: 0;
+  pointer-events: none;
+  animation-play-state: running;
+}
+.traingleSlider #auto:checked ~ .wrapper .content1 { animation-delay: 0s; }
+.traingleSlider #auto:checked ~ .wrapper .content2 { animation-delay: 4s; }
+.traingleSlider #auto:checked ~ .wrapper .content3 { animation-delay: 8s; }
+
+.traingleSlider #i_1:checked ~ .wrapper .content1,
+.traingleSlider #i_2:checked ~ .wrapper .content2,
+.traingleSlider #i_3:checked ~ .wrapper .content3 {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  animation-play-state: paused !important;
+}
+
+/* Controls */
+.traingleSlider .controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+    margin: -20px 0 0 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+.traingleSlider label {
+  font-size:.5rem;
+  color: #bbb;
+  cursor: pointer;
+  transition: color .3s;
+}
+.traingleSlider #i_1:checked ~ .controls label[for="i_1"],
+.traingleSlider #i_2:checked ~ .controls label[for="i_2"],
+.traingleSlider #i_3:checked ~ .controls label[for="i_3"] {
+  color: #222;
+}
+
+/* Dot animations */
+@keyframes dotactive1 {
+  0%, 33.33% { color: #222; }
+  33.34%, 100% { color: #bbb; }
+}
+@keyframes dotactive2 {
+  0%, 33.33% { color: #bbb; }
+  33.34%, 66.66% { color: #222; }
+  66.67%, 100% { color: #bbb; }
+}
+@keyframes dotactive3 {
+  0%, 66.66% { color: #bbb; }
+  66.67%, 100% { color: #222; }
+}
+.traingleSlider #auto:checked ~ .controls .dot1 { animation: dotactive1 12s infinite linear; }
+.traingleSlider #auto:checked ~ .controls .dot2 { animation: dotactive2 12s infinite linear; }
+.traingleSlider #auto:checked ~ .controls .dot3 { animation: dotactive3 12s infinite linear; }
+
+/***************jquwery white traingle*************/
+
+/* Scope slider styles under .award-jquery-inner */
+/**.award-jquery-inner {
+    position: absolute;
+    right: 0;
+    top: 152px;
+    left: 0;
+}
+**/
+.award-jquery-inner {
+    position: absolute;
+    top: 152px;
+    left: 34%;
+    transform: translateX(-50%);  /* This centers it horizontally */
+    width: max-content; /* Or set a fixed width if needed */
+    z-index: 1; /* Make sure it stays above the image */
+}
+/*.award-jquery-inner .slider-container {
+  position: relative;
+  width: 300px;
+  margin: 80px auto;
+  height: 490px;
+}*/
+
+.award-jquery-inner .slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  min-height: 350px;
+  max-height: 550px;
+  height:70vh; /* Based on screen height */
+  margin: 5vh auto;
+}
+
+.award-jquery-inner .slider-container img {
+  width: 100%;
+  height:auto;
+  display: none;
+}
+
+.award-jquery-inner .slider-container img.active {
+  display: block;
+}
+
+.award-jquery-inner .buttons {
+  margin-top: 20px;
+}
+
+.award-jquery-inner .buttons button {
+  background: #001f7f;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.award-jquery-inner .buttons button:hover {
+  background: #0033cc;
+}
+
+
+
+

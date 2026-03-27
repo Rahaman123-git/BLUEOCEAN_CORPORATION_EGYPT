@@ -1,0 +1,57 @@
+// BLOG CATEGORY PAGE
+let blogCatBanner = document.querySelector(".blogCatBanner");
+if(blogCatBanner) {
+    var slider = tns({
+        container: blogCatBanner,
+        items: 1,
+        slideBy: "page",
+        autoplay: true,
+        autoplayButtonOutput: false,
+        controls: false,
+        nav: true,
+        navPosition: 'bottom',
+        speed: 1000,
+        autoplayTimeout: 3000,
+        mode: 'carousel',
+        speed: 1000
+    });
+}
+
+let blogCatSlider = document.querySelector(".blogCatSlider");
+if(blogCatSlider) {
+    var slider = tns({
+        container: blogCatSlider,
+        items: 1,
+        slideBy: "page",
+        autoplay: true,
+        autoplayButtonOutput: false,
+        controls: false,
+        nav: true,
+        navPosition: 'bottom',
+        speed: 1000,
+        autoplayTimeout: 3000,
+        mode: 'carousel',
+        speed: 1000
+    });
+}
+
+// Blog Details Slider
+
+let blogDetailSlider = document.querySelector(".blogDetailSlider");
+if(blogDetailSlider) {
+    var slider = tns({
+        container: blogDetailSlider,
+        items: 1,
+        slideBy: "page",
+        autoplay: true,
+        autoplayButtonOutput: false,
+        controls: false,
+        nav: true,
+        navPosition: 'bottom',
+        speed: 1000,
+        autoplayTimeout: 3000,
+        mode: 'carousel',
+        speed: 1000
+    });
+}
+// Blog End

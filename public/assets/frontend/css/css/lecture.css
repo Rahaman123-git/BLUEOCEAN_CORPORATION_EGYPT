@@ -1,0 +1,889 @@
+
+ 
+ :root{
+    --accent:#0c6b3f;        /* green accent used for borders & small items */
+    --accent-dark:#0b4f32;
+    --title:#1658b3;        /* required h2 color */
+    --button:#0c1896;       /* required button color */
+    --muted:#6b6b6b;
+    --text:#222;
+    --card-padding:28px;
+    --max-width:1200px;
+  }
+
+
+
+  /* layout for two cards side-by-side */
+  .lectures {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  /* each card (your required structure: .lecture-detail > .lecture-details) */
+  .lecture-detail{
+  
+    padding:0; /* inner padding on .lecture-details */
+    box-sizing:border-box;
+    position:relative;
+    overflow:hidden;
+    min-height:420px;
+    background:#fff;
+	line-height:1.6;
+  }
+   .lecture-detail-fun{
+  
+    padding:0; /* inner padding on .lecture-details */
+    box-sizing:border-box;
+    position:relative;
+    overflow:hidden;
+    min-height:270px;
+    background:#fff;
+	line-height:1.6;
+  }
+
+  .lecture-details{
+    padding:var(--card-padding);
+	border:1px solid #00A0E3;
+	border-top:4px solid #00A0E3;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+  }
+  
+  /*************/
+  
+  .subscription-info {
+        background: #fff;
+    padding: 15px 0;
+    line-height: 1.4;
+    max-width: 500px;
+    font-size: 18px;
+    color: #000;
+    }
+
+    /* Grid for alignment */
+    .info-row {
+      display: grid;
+      grid-template-columns: 200px auto; /* left column fixed width */
+      margin-bottom: 4px;
+    }
+
+    .info-label {
+      text-align: left;
+    }
+
+    .info-value {
+      font-weight: bold;
+    }
+
+    .info-value em {
+      font-style: italic;
+      font-weight: normal;
+    }
+
+    .subscription-info a {
+      color: #0077cc;
+      text-decoration: none;
+      font-size: 17px;
+	  font-style:italic;
+    }
+
+    .subscription-info a:hover {
+      text-decoration: underline;
+    }
+	
+	/*********************/
+
+  /* small top metadata */
+  .meta{
+    font-size:.95rem;
+    color:var(--muted);
+    margin-bottom:14px;
+  }
+  .meta b{color:var(--text);}
+
+  /* title required color */
+  .lecture-detail h2{
+    color:#0C1895; /* matches your requirement */
+    font-size:1.45rem;
+    margin:8px 0 12px;
+    line-height:1.2;
+  }
+
+  .desc{
+    font-size:18px;
+    line-height:1.6;
+    color:#000;
+    margin-bottom:12px;
+  }
+
+  .more{
+    display:inline-block;
+    color:#0C1895;
+    font-weight:600;
+    text-decoration:none;
+    margin-top:18px;
+	
+  }
+  .more img {
+	  float:right;
+  }
+    .more:hover {
+		color:#0C1895;
+	}
+
+  .note{
+    font-size:.85rem;
+    font-style:italic;
+    color:#666;
+    margin-bottom:18px;
+  }
+
+  /* pricing row */
+  .pricing{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    margin-top:auto; /* push pricing + button to bottom */
+    flex-wrap:wrap;
+  }
+
+  .pricing .prices{
+    flex:1 1 220px;
+  }
+
+  .prices .label{
+    font-weight:700;
+    color:var(--accent-dark);
+    margin-bottom:6px;
+  }
+
+  .prices .member-price{
+    font-weight:800;
+    color:#0a7a3f; /* green price color similar to screenshot */
+    font-size:1.2rem;
+    margin-top:6px;
+    margin-bottom:6px;
+  }
+
+  .prices .nonmember{
+    color:#666;
+    margin-top:2px;
+  }
+
+  /* button area */
+  .cta-wrap{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+
+  .btn-register{
+    background:var(--button);
+    color:#fff;
+    border:none;
+    padding:14px 22px;
+    font-weight:700;
+    font-size:1rem;
+    cursor:pointer;
+    border-radius:2px;
+    box-shadow:0 1px 0 rgba(0,0,0,0.06) inset;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .btn-register svg{width:18px;height:18px;opacity:.95}
+
+  /* small cart/triangle accent next to button to mimic screenshot small green tile */
+  .cta-accent{
+    width:48px;
+    height:40px;
+    background:linear-gradient(135deg, #2d7b39, #b6e36c);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:2px;
+    box-shadow:0 1px 0 rgba(0,0,0,0.05);
+  }
+  .cta-accent svg{width:20px;height:20px;opacity:.95}
+  @media(min-width:1850px){
+
+  }
+    @media(min-width:1368px){
+
+	}
+
+  /* responsiveness */
+  @media(min-width:880px){
+    .lectures{ grid-template-columns: 1fr 1fr; }
+  }
+
+  @media(max-width:520px){
+    .lecture-details{ padding:18px; min-height:auto;}
+    .pricing{ flex-direction:column; align-items:stretch; gap:12px;}
+    .cta-wrap{ justify-content:flex-start; }
+  }
+
+  /* small typographic tweaks */
+  a { color:inherit; }
+  .small-muted{font-size:.85rem;color:#777}
+  
+  
+  
+  /**********innerpage**************/
+  .row {
+	  margin:50px 0 0;
+ 
+  }
+   /* Two-column layout: left 70% / right 30% using floats (no flex) */
+  .row:after{content:"";display:table;clear:both}
+  .col-left{width:62%;float:left;box-sizing:border-box;padding-right:30px}
+  .col-right{width:38%;float:right;box-sizing:border-box}
+
+  /* Responsive: stack columns to 100% on narrower screens */
+  @media (max-width:900px){
+    .col-left,.col-right{width:100%;float:none;padding:0}
+    .col-right{margin-top:20px}
+  }
+
+  /* Overview section headings - use class color declarations (no :root variables) */
+  .overview h2{ color:#0C1895; font-size:36px; margin:6px 0 18px; }
+  .overview h4{ color:#00A1E3; font-size:36px; margin:30px 0 10px; font-weight: bold; }
+
+  /* Body text */
+  .overview p {    
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+    margin: 0 0 16px; 
+	}
+  .overview .small-muted{ color:#000; font-size:20px; line-height: 1.4;  }
+
+  /* Included modules list with small green square bullets */
+  .modules{ margin-top:8px; padding-left:18px; }
+  .modules li{ margin:12px 0; list-style:none; position:relative; padding-left:18px; color:#333; font-size:15px }
+  .modules li::before{
+    content:"";
+    width:8px;height:8px;background:#00a0e3;display:inline-block;position:absolute;left:0;top:8px;
+  }
+
+  /* Back link */
+  .back-link { display:inline-block;color:#00a0e3;text-decoration:none;margin-bottom:18px;font-weight:600;font-size:14px }
+  .back-link:hover {color:#0C1895;}
+  .page-title{ margin:0 0 14px 0; font-weight:700 }
+
+  /* Sidebar card (must use .lecture-detail > .lecture-details markup) */
+  .lecture-detail2{
+    border:none;
+    background:#fff;
+    position:relative;
+	border: 1px solid #00A0E3;
+    border-top: 4px solid #00A0E3;
+	margin:60px 0 0;
+  }
+  .lecture-details2{
+    padding:26px;
+    box-sizing:border-box;
+  }
+
+  /* top thin green bar to match example */
+  .lecture-detail2 .top-bar{
+    height:8px;background:#0C1895;display:block;margin:50px 0 12px 0;
+  }
+
+  .lecture-details2 h3{ color:#0C1895; text-align:left; margin:6px 0 12px; font-size:28px; line-height:1.4; float:left; }
+  .meta{ font-size:14px;color:#666;margin:10px 0 14px;line-height:1.6 }
+  .meta b{ color:#222;font-weight:700 }
+
+  .divider{ border-top:1px solid #e7e7e7;margin:14px 0 14px }
+
+  .price-label{ color:#14602f;font-weight:700;font-size:14px;margin-bottom:6px; }
+  .price-amount{ font-weight:800;color:#0b7c3b;margin-bottom:8px;font-size:16px }
+  .nonmember{ color:#777;font-size:14px;margin-bottom:18px }
+
+  /* Register button and small accent tile */
+  .cta-row{ display:block; overflow:hidden; margin-top:10px }
+  .btn-register{
+    background:#0c1896; /* required button color */
+    color:#fff;
+    text-decoration:none;
+    display:inline-block;
+    padding:12px 18px;
+    font-weight:700;
+    border-radius:2px;
+    box-shadow:0 1px 0 rgba(0,0,0,0.06) inset;
+    vertical-align:middle;
+  }
+  /* accent tile to the right of button */
+  .btn-accent{
+    display:inline-block;
+    width:44px;height:40px;
+    vertical-align:middle;
+    margin-left:8px;
+    background:linear-gradient(135deg,#2f7f2f,#b7de55);
+    text-align:center;padding-top:8px;border-radius:2px;
+  }
+  .btn-accent svg{ width:18px;height:18px;opacity:.95 }
+
+  /* small typography tweaks */
+  .lead { font-size:15px; color:#555; line-height:1.7; margin-bottom:12px }
+  .course-format { margin-top:20px }
+
+  /* make sure card stays visually similar on small screens */
+  @media (max-width:480px){
+    .lecture-details2{ padding:18px }
+    .overview h2{ font-size:26px }
+    .overview h4{ font-size:18px }
+	
+  }
+    @media (max-width:375px){
+     /* Grid for alignment */
+    .info-row {
+      display:inline;
+
+    }
+	}
+  
+  /****************************************/
+  .hero {
+    position:relative;
+    overflow:hidden;
+    height:250px;              /* adjust height as needed */
+    display:block;
+	width:100%;
+  }
+
+  /* Background image as an <img> element (fills container) */
+  .hero .hero-bg {
+    position:absolute;
+    inset:0;                   /* top:0; right:0; bottom:0; left:0; */
+    width:100%;
+    height:100%;
+    object-fit:cover;          /* cover like CSS background-size:cover */
+    object-position:center center;
+    z-index:0;
+    pointer-events:none;
+    opacity:1;
+  }
+
+  /* optional overlay to darken image for readable white text */
+  .hero .overlay {
+    position:absolute;
+    inset:0;
+    background: linear-gradient(90deg, rgba(6,55,34,0.6) 0%, rgba(13,25,150,0.45) 50%, rgba(13,24,150,0.25) 100%);
+    z-index:1;
+    pointer-events:none;
+  }
+
+  /* wrapper centers content horizontally (max width) and vertically */
+  .wrapperx {
+    max-width:1440px;
+    margin:0 auto;
+    height:100%;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;        /* vertical centering */
+    position:relative;
+    z-index:2;                 /* above image and overlay */
+  }
+  .wrapperlft {
+	  background:#0B4FF;
+  }
+
+  /* h1 styling */
+  .wrapperx h1 {
+    color:#ffffff;            /* required white color */
+    margin:0;
+    line-height:1.05;
+    font-weight:700;
+    font-size: clamp(28px, 4.5vw, 48px);
+    max-width:720px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.25); /* subtle lift on text */
+  }
+  
+
+  /* Responsive adjustments */
+  @media (max-width:820px){
+    .hero{ height:140px }
+    .wrapperx{ padding-left:20px }
+  }
+
+  @media (max-width:520px){
+    .hero{ height:110px }
+    .wrapperx{ padding-left:14px; padding-right:14px }
+    .wrapperx h1{ font-size: clamp(20px, 7vw, 28px); max-width:100% }
+  }
+  
+  /*******/
+  
+  /* Banner full width */
+  .banner-rtl{
+    display:flex;
+    flex-wrap:wrap;
+    min-height:260px;
+    width:100%;
+	direction:rtl;
+	background: url("../images/foscm-image-det.webp") no-repeat center center;
+	background-size:cover;
+  }
+
+  /* Image panel (LEFT now) */
+.banner-media {
+  flex: 1 1 45%;
+  position: relative;
+  overflow: hidden;
+  opacity:.8;
+  background: #00B4FF; /* fallback / base color */
+  clip-path: polygon(0 0, /* top-left */ 100% 0, /* top-right */ 100% 100%, /* bottom-right */ 180px 100% /* diagonal point (move this value to control angle) */);
+}
+
+.banner-media::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+  background-size: cover;
+  opacity: 0.1; /* adjust transparency */
+  z-index: 0;
+}
+
+.banner-media > * {
+  position: relative; /* keep children above overlay */
+  z-index: 1;
+}
+  .banner-media img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    min-height:260px;
+    display:block;
+  }
+  .media-title{
+    position:absolute;
+    bottom: 60px;
+    right:400px;
+    color:#fff;
+    text-align:left;
+  }
+  .media-title h2 {
+	  font-size:96px;
+	  font-weight:bold;
+	  color:#fff;
+  }
+  .media-title h3{
+    margin:0;
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight:800;
+	font-size:40px;
+	font-weight:bold;
+  }
+  .media-title .subtitle{
+    margin-top:6px;
+    font-size: clamp(14px, 1.2vw, 45px);
+    font-weight:100;
+  }
+  .media-title .subtitle span {
+	  font-weight:bold;
+	  display:block;
+  }
+
+  /* Text panel (RIGHT now with flipped angle) */
+  .banner-copy{
+    flex:1 1 42%;
+    color:#fff;
+    padding:30px;
+    text-align:right;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  
+  }
+  .banner-copy p{
+    margin:0 0 12px;
+    line-height:1.9;
+    font-size: clamp(14px, 1.8vw, 25px);
+	width:85%;
+  }
+  .banner-copy .tagline{
+    font-weight:700;
+    font-size: clamp(14px, 1.7vw, 15px);
+  }
+  
+  
+    @media (max-width:1440px){
+  .banner-copy {
+    flex: 1 1 2%;
+	
+  }
+  .media-title {
+    position: absolute;
+	right:150px;
+	
+}
+	}
+	
+	    @media (max-width:1000px){
+			.banner-rtl{
+      flex-direction:column;
+    }
+    .banner-copy{
+      clip-path:none;
+    }
+    .banner-media{
+      order:-1; /* show image first on mobile */
+    }
+	.banner-media img{
+
+  /* New diagonal cut: red ➝ yellow */
+  clip-path: polygon(
+    0 0,       /* top-left */
+    100% 0,    /* top-right */
+    100% 100%, /* bottom-right */
+    0px 100%      /* diagonal point (move this value to control angle) */
+  );
+}
+.banner-media {
+	clip-path:none;
+}
+.media-title {
+    position: absolute;
+    bottom: 0;
+	top:18px;
+	
+}
+.banner-media {
+    flex: 36 1 45%;
+}
+.media-title h2 {
+	font-size:60px;
+}
+.media-title .subtitle {
+
+    font-size: clamp(32px, 1.2vw, 45px);
+}
+
+		}
+
+  /* Responsive stacking */
+  @media (max-width: 992px){
+    .banner-rtl{
+      flex-direction:column;
+    }
+    .banner-copy{
+      clip-path:none;
+    }
+    .banner-media{
+      order:-1; /* show image first on mobile */
+    }
+	.banner-media img{
+
+  /* New diagonal cut: red ➝ yellow */
+  clip-path: polygon(
+    0 0,       /* top-left */
+    100% 0,    /* top-right */
+    100% 100%, /* bottom-right */
+    0px 100%      /* diagonal point (move this value to control angle) */
+  );
+}
+  }
+  @media (max-width: 574px){  
+      .media-title .subtitle {
+        font-size: clamp(20px, 1.2vw, 45px);
+    }
+	    .media-title {
+        right: 20px;
+    }
+	
+  }
+  
+  /* CSS - paste in your stylesheet */
+.course-specs .containers {
+  max-width:100%;
+  margin: 0 ;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+/* Table base */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 8px 0;
+  table-layout: auto;
+  font-size: 15px;
+}
+
+/* Give rows breathing room (visual card-like rows) */
+.responsive-table tbody tr {
+  background: transparent;
+  margin-bottom:0px;
+}
+
+/* Label (left column) */
+.responsive-table th {
+  text-align: left;
+  font-weight: 600;
+  padding: 0 0;
+  color: #000;
+  vertical-align: middle;
+  width: 50%;
+  white-space: nowrap;
+}
+
+/* Value (right column) */
+.responsive-table td {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 700;
+  color: #0b3b66;            /* darker blue for value */
+  vertical-align: middle;
+}
+
+/* small note inside value (like parenthesis) */
+.responsive-table td small {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #555;
+  margin-left: 6px;
+}
+
+/* Subtle separation line between rows (desktop) */
+.responsive-table tbody tr + tr th {
+  border-top: 1px solid rgba(0,0,0,0.04);
+}
+
+/* Note below the table */
+.spec-note {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #0377DD; /* blue note color */
+  font-weight: 600;
+  font-style:italic;
+}
+
+/* -------------------------
+   Responsive (mobile) rules
+   ------------------------- */
+@media (max-width: 640px) {
+  .responsive-table,
+  .responsive-table tbody,
+  .responsive-table tr,
+  .responsive-table th,
+  .responsive-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .responsive-table tr {
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    background: #f7fbff; /* light card background on mobile */
+    border-radius: 8px;
+  }
+
+  .responsive-table th {
+    padding: 8px 10px;
+    margin: 0 0 6px 0;
+    color: #40505a;
+    font-weight: 600;
+	float:left;
+  }
+
+  .responsive-table td {
+    text-align: left;
+    padding: 0 10px 8px 10px;
+    font-size: 16px;
+    color: #0b3b66;
+  }
+
+  .spec-note {
+    margin-top: 10px;
+    text-align: left;
+  }
+}
+
+
+/* CSS: scoped to .include-modules to avoid conflicts */
+.include-modules {
+  padding: 14px 0 22px;
+}
+.moduless {
+	margin:40px 0 0 ;
+}
+.moduless h2 {
+	font-size:36px;
+	color:#00A1E3;
+	float:left;
+	width:100%;
+  font-weight: bold;
+}
+
+/* inner layout wrapper */
+.include-modules__inner {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 0;
+  box-sizing: border-box;
+    background: #DEF6FF; 
+}
+
+/* media (image) box */
+.include-modules__media {
+  flex: 0 0 500px;           /* fixed-ish image column on desktop */
+  order: 2;                  /* place visually to right on desktop */
+  overflow: hidden;
+  border-radius: 2px;
+  background: #fff;
+  display: block;
+}
+.include-modules__media img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;         /* adjust as needed */
+  object-fit: cover;
+  display: block;
+}
+
+/* content box (left panel with pale blue background like screenshot) */
+.include-modules__content {
+  flex: 1 1 0;
+      /* pale blue background; change if needed */
+  padding: 18px 20px;
+  border-radius: 2px;
+  box-shadow: none;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* title */
+.include-modules__title {
+  margin: 0 0 8px 0;
+  color: #0072a6;            /* slightly darker blue heading */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* list */
+.include-modules__list {
+  margin: 6px 0 16px 0;
+  padding: 0 0 0 20px;       /* left padding for bullets */
+  list-style: disc;
+}
+.include-modules__list li {
+  margin: 8px 0;
+  font-size: 22px;           /* requested size */
+  color: #000;               /* requested color */
+  line-height:40px;
+  font-weight: 600;
+}
+
+/* small module code style inside li */
+.include-modules__list .muted {
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* cta row (register left, download right) */
+.include-modules__cta {
+	text-align:right;
+  margin-top: 6px;
+  gap: 12px;
+}
+
+/* simple button styles (override if using your design system) */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* primary button */
+.btn--primary {
+  background: #0b3b66;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+
+.module-register {
+	width:100%;
+	float:left;
+	margin:10px 0;
+}
+.module-register-sec {
+	width:50%;
+	float:left;
+}
+.download-docu {
+	width:50%;
+	float:left;
+}
+/* download link */
+.download-links {
+  text-decoration: none;
+  color: #0b3b66;
+  font-weight: 700;
+  font-size: 18px;
+}
+.download-links img {
+    position: relative;
+	float:right;
+    top: -8px;
+    right: -10px;
+}
+.register-buttn2 {
+	width:180px;
+	height:50px;
+	background: url("../images/landing/second-level/primary-buttn.png") no-repeat left center;
+	cursor:pointer;
+	float:left;
+	margin-top:0px;
+	
+}
+
+/* -----------------------
+   Responsive: mobile-first
+   ----------------------- */
+@media (max-width: 880px) {
+  .include-modules__inner {
+    gap: 14px;
+  }
+
+  /* stack: image first (source already image first), then content */
+  .include-modules__inner {
+    flex-direction: column;
+  }
+  .include-modules__media { order: 1; width: 100%; flex: 0 0 auto; }
+  .include-modules__content { order: 2; width: 100%; }
+
+  .include-modules__media img { min-height: 180px; }
+
+}
+@media (max-width: 546px) {
+	.module-register-sec {
+    width: 100%;
+    float: left;
+}
+.download-docu {
+    width: 100%;
+    float: left;
+}
+.include-modules__cta {
+    text-align: left;
+}
+.download-links img {
+	display:none;
+}
+	
+}
+  

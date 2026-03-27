@@ -1,0 +1,27 @@
+.primary-btn {
+    @apply text-white bg-primary text-lg font-medium capitalize py-[11px] px-[20px]
+    inline-flex flex-row gap-2 items-center justify-center hover:bg-secondary; 
+    transition: all 0.3s ease-in-out 0s;
+    & img {
+        @apply w-6 h-6;
+        transition: all 0.3s ease-in-out 0s;
+    }      
+}   
+.primary-btn:hover img {
+    width: 0;
+}          
+
+
+.primary-btn-outline {
+    @apply text-primary text-lg font-medium capitalize py-[10px] px-[20px]
+    inline-flex flex-row gap-2 items-center justify-center border border-primary
+    hover:border-secondary hover:text-secondary; 
+    transition: all 0.3s ease-in-out 0s;
+    & img {
+        @apply w-6 h-6;
+        transition: all 0.3s ease-in-out 0s;
+    }      
+}   
+.primary-btn-outline:hover img {
+    width: 0;
+}  

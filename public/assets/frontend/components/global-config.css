@@ -1,0 +1,21 @@
+/* Global Theme Config Start */
+:root {
+    --primary: #0C1895;
+    --secondary: #00A0E3;
+    --blue: #8CCEED;
+    --gold: #C38511;
+    --gray: #505050;
+    --color-headline: #1039BF;
+    --color-subheadline: #707070;
+    --color-light-blue-color: #00A0E3;
+    --color-heading2: #153D84;
+    --color-smalltext: #FF01D5;
+    --color-dark-bg-blue: #013F81;
+    --color-bowld-blue-color:#0028AE;
+    --color-bowld-pink-color:#73008D;
+    --color-dark-para:#020102;
+    --color-blue-text-hdr:#0C1896;
+    --color-blue-text-para:#54019C;
+}
+
+/* Global Theme Config End */

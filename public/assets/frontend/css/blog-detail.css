@@ -1,0 +1,141 @@
+.tns-outer{position: relative;}
+.tns-nav{position: absolute; display: flex; justify-content: center; width: 100%; left: 0; bottom: 20px; gap: 8px;}
+.tns-nav button{height: 14px; width: 14px; border-radius: 50%; overflow: hidden; background-color: rgba(255,255,255, 0.5); font-size: 0;}
+.tns-nav button.tns-nav-active{background-color: rgba(255,255,255, 1);}
+.container{padding: 0;}
+
+/* blog category two columns */
+
+.blogDetails-two-cols{
+    position: relative;
+    padding: 60px 0 48px;}
+.blogDetails-two-cols .container{display: flex; gap: 6.6%; }
+.blogDetails-two-cols .container .col-heading{ width: 44%;}
+.blogDetails-two-cols .container .col-heading h2{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.6px;
+    position: relative;
+}
+.blogDetails-two-cols .container .col-heading h2 strong{font-weight: 700; display: block; letter-spacing: -1.2px; }
+.blogDetails-two-cols .container .col-heading h2 strong.large-text{font-size: 42px; line-height: 1.1;}
+
+.blogDetails-two-cols .container .col-content h3{font-size: 24px; font-weight: 700; margin-bottom: 8px;}
+.blogDetails-two-cols .container .col-content h3 strong{font-weight: 700;}
+.blogDetails-two-cols .container .col-content{flex: 1; padding: 2px 10% 0 0;}
+.blogDetails-two-cols .container .col-content p{font-size: 22px; font-weight: 400; line-height: 1; letter-spacing: -0.3px;}
+
+hr{background-color: #FF31D6; height: 1px; border: 0; position: relative; overflow: visible;}
+
+/* blue Box */
+.blueBox{ padding-top: 20px; margin-bottom: 22px;}
+.blueBox .container{ background: linear-gradient(to right,  rgba(12,24,150,1) 0%,rgba(0,160,227,1) 100%);
+    padding: 29px 66px 25px; letter-spacing: 0.4px;
+}
+.blueBox .container p{color: white; font-size: 24px; line-height: 1; max-width: 940px;}
+.blueBox .container p:first-child{margin-bottom: 26px; }
+.blueBox .container p:nth-child(2){margin-bottom: 10px; font-size: 34.3px;}
+.blueBox .container p:last-child{letter-spacing: 1.8px;}
+/* video Blog */
+.videoBlog-wrapper{}
+.videoBlog-wrapper h2{font-size: 34px; line-height: 1.2; font-weight: 500; color: #0C1895;margin-bottom: 19px;}
+
+.videoBlog-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; 
+    margin-bottom: 44px;
+}
+/* Responsive: M2bile (1 col2mn) */
+@media (max-width: 768px) {
+    .videoBlog-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.videoBlog-grid .videoItem{position: relative;}
+.videoBlog-grid .video-title{position: absolute; left: 0; top: 0; height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 400; color: #0C1895; }
+
+
+/* two columns Right layout */
+.two-col-right{margin-bottom: 45px;}
+.two-col-right .container{display: flex; gap: 20px;}
+
+/* main content */
+.mainContainer{flex: 1;}
+.mainContainer .imgWrapper{margin-bottom: 30px;}
+.mainContainer .imgWrapper:nth-child(2){margin-bottom: 70px;}
+.mainContainer .imgWrapper:last-child{margin-bottom: 0;}
+
+/* side bar */
+.right-sidebar{width: 32.4%; border: solid 1px #9D9E9E;}
+.sidebar-heading{background: linear-gradient(to right,  rgba(49,67,255,1) 0%,rgba(255,120,58,1) 100%);
+padding: 13px 28px; font-size: 36px; font-weight: 500; }
+.sidebar-heading h3{ line-height: 1; padding: 9px 0 2px; color: white;}
+
+.sidebar-content{padding: 28px 28px 12px 28px;}
+.ratedBlog-list{margin-bottom: 20px;}
+.ratedBlog-list .ratedBlog-item{border-bottom: solid 1px #767676; padding-bottom: 31px; margin-bottom: 26px;}
+.ratedBlog-list .ratedBlog-item h4{font-size: 24px; font-weight: 700; line-height: 1.2; letter-spacing: -0.5px; margin-bottom: 11px;}
+.ratedBlog-list .ratedBlog-item p{font-size: 24px; font-weight: 400; line-height: 1; letter-spacing: -0.4px; margin-bottom: 20px;}
+.ratedBlog-list .ratedBlog-item .primary-btn{width: 40px; height: 40px; padding: 0;}
+
+.ratedBlog-list .ratedBlog-item:nth-child(2){padding-bottom: 50px;}
+.ratedBlog-list .ratedBlog-item:last-child{padding-bottom: 20px; margin-bottom: 0; border-bottom: 0 none;}
+.ratedBlog-list .ratedBlog-item:last-child h4{letter-spacing: -0.9px;}
+.ratedBlog-list .ratedBlog-item:last-child p{width: 90%; letter-spacing: -0.4px;}
+
+/* blog Reels  */
+.blogReelsWrapper{padding-top: 8px;}
+.blogReelsWrapper h4{font-size: 24px; font-weight: 700; letter-spacing: -0.7px;line-height: 1.4; margin-bottom: 10px;}
+.blogReelsWrapper .blogReels-item{display: inline-block; position: relative;}
+.blogReelsWrapper .blogReels-item .playIcon{ position: absolute; left: 0; top: 0; height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;}
+
+
+/* Responsive Style  */
+@media only screen and (min-width: 1200px) {
+    .container{padding: 0;}
+}
+@media only screen and (max-width: 1199px) {
+    .blogDetails-two-cols .container .col-heading h2{
+        font-size: clamp(26px, 1.4583rem + 0.6667vw, 34px);
+        line-height: 1.2;
+    }
+    .blogDetails-two-cols .container .col-content p{
+        font-size: clamp(18px, 1.0417rem + 0.3333vw, 22px);
+        line-height: 1.2;
+    }
+    .blueBox .container p,
+    .ratedBlog-list .ratedBlog-item p{
+        font-size: clamp(20px, 1.0417rem + 0.3333vw, 24px);
+        line-height: 1.2;
+    }
+    .blueBox .container p:nth-child(2){
+        font-size: clamp(26px, 1.4583rem + 0.6667vw, 34px);
+    }
+    .sidebar-heading h3{
+        font-size: clamp(28px, 1.5833rem + 0.6667vw, 36px);
+    }
+
+    .blogDetails-two-cols .container .col-heading h2 strong.large-text{
+        font-size: clamp(30px, 1.4583rem + 1.1667vw, 42px);
+    }
+    .mainContainer .imgWrapper:nth-child(2){
+        margin-bottom: 30px; 
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {}
+@media only screen and (max-width: 767px) {
+    .blogDetails-two-cols .container,
+    .two-col-right .container{
+        flex-direction: column; gap: 20px;
+    }
+    .right-sidebar,
+    .blogDetails-two-cols .container .col-heading {
+        width: 100%;
+    }
+
+    .blogDetails-two-cols .container .col-content{padding-right: 0;}
+
+}

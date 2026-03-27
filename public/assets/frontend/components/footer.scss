@@ -1,0 +1,21 @@
+/* Footer  v20.03.25:01*/
+
+
+.location-tabs {
+    @apply flex flex-col lg:flex-row justify-between;
+    li {
+        button {
+            @apply text-base sm:text-lg 2xl:text-xl font-normal
+            inline-block text-white;
+        }
+        button.active {
+            @apply text-secondary;
+        }
+    }
+}
+.certificalocationtion-tabs [aria-selected="true"]{
+    @apply border-0;
+}
+.location-tabs [aria-selected="false"]{
+    @apply border-0;
+}
