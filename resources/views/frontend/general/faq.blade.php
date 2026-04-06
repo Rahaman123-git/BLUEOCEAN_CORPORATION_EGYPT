@@ -1,5 +1,5 @@
 @extends('layouts.frontend.app')
-@section('title', ' FAQ - Blue Ocean Corporation')
+@section('title', ' FAQ - Blue Ocean')
 
 @section('content')
   <div class="breadcrumb py-3">
